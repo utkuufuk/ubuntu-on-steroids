@@ -23,7 +23,7 @@
 ### Vim
  | Tool | Description |
  |:-|:-|
- | [Neovim](https://github.com/neovim/neovim) | <ol><li> `sudo apt install neovim`<li> `mkdir ~/.config/nvim` <li> `cp ~/Github/vim-cheatsheet/init.vim  ~/.config/nvim/init.vim` |
+ | [Neovim](https://github.com/neovim/neovim) | <ol><li> `sudo apt install neovim` <li> `curl -o ~/.config/nvim/init.vim --create-dirs https://github.com/utkuufuk/vim-cheatsheet/init.vim` |
  | [Vim-Plug](https://github.com/junegunn/vim-plug) | `curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim` |
  | [Vim Markdown Composer](https://github.com/euclio/vim-markdown-composer) | `curl https://sh.rustup.rs -sSf \| sh`  |
  | [Vimtex](https://github.com/lervag/vimtex) | <ol><li> `sudo apt install latexmk` <li> `sudo apt install texlive` <li> `sudo apt install texlive-latex-extra` <li>`mkdir ~/texm` <li> `mkdir ~/texmf/tex` <li> Place the `.sty` files inside `tex` folder. |
