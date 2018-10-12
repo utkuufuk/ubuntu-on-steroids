@@ -1,5 +1,14 @@
 # Ubuntu Toolbox
-### Standard User Tools
+### Dependencies
+ * `sudo apt install python-dev`
+ * `sudo apt install python3-dev`
+ * `sudo apt install libssl-dev`
+ * `sudo apt install curl`
+ * `sudo apt install cmake`
+ * `sudo apt install nodejs`
+ * `sudo apt install npm`
+
+### Standard Tools
  | Tool | Description |
  |:-|:-|
  | Keepass2 | `sudo apt install keepass2` |
@@ -8,13 +17,9 @@
  | Spotify | Ubuntu Software |
  | Nvidia Driver | *Software & Updates > Additional Drivers* |
  | Desktop Slideshow | *Shotwell Photo Manager > Select Pictures > File > Set as Desktop Slideshow* |
-
-### Standard Developer Tools
- | Tool | Description |
- |:-|:-|
- | Common Dependencies | <ol><li> `sudo apt install python-dev` <li> ` sudo apt install python3-dev` <li> `sudo apt install libssl-dev` <li> `sudo apt install curl` <li> `sudo apt install cmake` <li> `sudo apt install nodejs` <li> `sudo apt install npm` |
  | [Git & Github](https://help.github.com/articles/connecting-to-github-with-ssh/) | <ol><li>`sudo apt install git` <li> https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/ <li> https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/ |
  | [Powerline Fonts](https://github.com/powerline/fonts) | <ol><li>`git clone https://github.com/powerline/fonts.git --depth=1` <li> `cd fonts` <li> `./install.sh` <li> `cd..` <li> `rm -rf fonts` |
+ | [Gnome Theme](https://github.com/snwh/paper-icon-theme) | <ol><li> `sudo add-apt-repository -u ppa:snwh/ppa` <li> `sudo apt update` <li> `sudo apt install paper-icon-theme` <li> `sudo apt install gnome-tweak-tool` <li> *Tweaks > Appearance > Applications > Adwaita-dark* <li> *Tweaks > Appearance > Icons > Paper* |
 
 ### Vim
  | Tool | Description |
