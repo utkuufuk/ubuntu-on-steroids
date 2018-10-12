@@ -12,13 +12,10 @@
 ### Standard Developer Tools
  | Tool | Description |
  |:-|:-|
- | Common Dependencies | <ol><li> `sudo apt install python-dev` <li> ` sudo apt install python3-dev` <li> `sudo apt install libssl-dev` <li> `sudo apt install curl` <li> `sudo apt install cmake` |
+ | Common Dependencies | <ol><li> `sudo apt install python-dev` <li> ` sudo apt install python3-dev` <li> `sudo apt install libssl-dev` <li> `sudo apt install curl` <li> `sudo apt install cmake` <li> `sudo apt install nodejs` <li> `sudo apt install npm` |
  | [Git & Github](https://help.github.com/articles/connecting-to-github-with-ssh/) | <ol><li>`sudo apt install git` <li> https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/ <li> https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/ |
  | [Powerline Fonts](https://github.com/powerline/fonts) | <ol><li>`git clone https://github.com/powerline/fonts.git --depth=1` <li> `cd fonts` <li> `./install.sh` <li> `cd..` <li> `rm -rf fonts` |
-
-#### [trello-cli](https://github.com/mheap/trello-cli)
- - `sudo ln -s absolute/path/to/file /home/utku/bin`
- - Add this to .zshrc: `addcard(){trello add-card -b "Tasks" -l "Inbox" $1}`
+ | [Trello-Cli](https://github.com/mheap/trello-cli) | <ol><li>`sudo npm i trello-cli -g` <li> Configure: https://www.npmjs.com/package/trello-cli <li> `.zshrc > addcard(){trello add-card -b "Tasks" -l "Inbox" $1}` <li> `source ~/.zshrc` <li> `trello refresh` |
 
 ### Vim
  | Tool | Description |
@@ -35,6 +32,7 @@
  | [Zsh](https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH) | <ol><li> `sudo apt install zsh` <li> `chsh -s $(which zsh)` <li> *Reboot* <li>`echo $SHELL` |
  | [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) | `sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"` |
  | [Spaceship Propmpt](https://github.com/denysdovhan/spaceship-prompt) | <ol><li> `git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"` <li> `ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"` <li> `.zshrc` > `ZSH_THEME="spaceship"` |
+ | [Zsh Autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) | <ol><li>`git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions` <li> `.zshrc > plugins=(zsh-autosuggestions)` |
 
 ### Bonus: Keyboard Shortcuts
 | Shortcut | Description |
