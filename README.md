@@ -7,6 +7,10 @@
  * `sudo apt install cmake`
  * `sudo apt install nodejs`
  * `sudo apt install npm`
+ * `sudo apt install python3-pip`
+ * `sudo apt install python3-tk` *(optional)*
+ * `sudo apt install python3-bs4` *(optional)*
+ * `sudo pip3 install matplotlib` *(optional)*
 
 ### Standard Tools
  | Tool | Description |
