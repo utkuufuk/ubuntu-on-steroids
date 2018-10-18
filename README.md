@@ -41,7 +41,7 @@
  | [Zsh](https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH) | <ol><li> `sudo apt install zsh` <li> `chsh -s $(which zsh)` <li> `gnome-session-quit` <li> *Relog* <li> `echo $SHELL` |
  | [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) | `sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"` |
  | [Spaceship Propmpt](https://github.com/denysdovhan/spaceship-prompt) | <ol><li> `git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"` <li> `ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"` <li> `.zshrc` > `ZSH_THEME="spaceship"` |
- | [Zsh Autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) | <ol><li> `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions` <li> `.zshrc > plugins=(zsh-autosuggestions)` |
+ | [Zsh Autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) | <ol><li> `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions` <li> `.zshrc > plugins=(zsh-autosuggestions)` <li> `echo "bindkey '^ ' autosuggest-accept" >> $ZSH_CUSTOM/autosuggestion-settings.zsh` <li> source `$ZSH_CUSTOM/autosuggestion-settings.zsh` |
 
 ### Other
  | Tool | Description |
