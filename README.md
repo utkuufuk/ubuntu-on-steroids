@@ -11,6 +11,7 @@
  * `sudo apt install python3-tk` *(optional)*
  * `sudo apt install python3-bs4` *(optional)*
  * `sudo pip3 install matplotlib` *(optional)*
+ * `sudo apt install golang-go`
 
 ### Standard Tools
  | Tool | Description |
