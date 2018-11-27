@@ -1,0 +1,41 @@
+{
+    "vim.easymotion": true,
+    "vim.sneak": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [
+        {
+        "before": ["j", "j"],
+        "after": ["<Esc>"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+        "before": ["<leader>", "d"],
+        "after": ["d", "d"]
+        },
+        {
+        "before": ["<leader>", "<leader>"],
+        "commands": [":nohl"]
+        },
+        {
+            "before": ["j"],
+            "after": ["g", "j"]
+        },
+        {
+            "before": ["k"],
+            "after": ["g", "k"]
+        }
+    ],
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false
+    },
+    "editor.wordWrapColumn": 120,
+    "workbench.colorTheme": "Monokai",
+    "latex-workshop.view.pdf.viewer": "tab",
+    "window.titleBarStyle": "custom"
+}

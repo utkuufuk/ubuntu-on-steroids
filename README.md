@@ -45,11 +45,11 @@
  | [Spaceship Propmpt](https://github.com/denysdovhan/spaceship-prompt) | <ol><li> `git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"` <li> `ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"` <li> `.zshrc` > `ZSH_THEME="spaceship"` <li> `source ~/.zshrc` |
  | [Zsh Autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) | <ol><li> `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions` <li> `.zshrc > plugins=(zsh-autosuggestions)` <li> `echo "bindkey '^ ' autosuggest-accept" >> $ZSH_CUSTOM/autosuggestion-settings.zsh` <li> `source ~/.zshrc` <li> `source $ZSH_CUSTOM/autosuggestion-settings.zsh` |
  | [Zsh Syntax Highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) | <ol><li> `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting` <li> `.zshrc > plugins=(zsh-syntax-highlighting)` <li> `source ~/.zshrc` |
- | Red Stderr | <ol><li> *Add the following line to* `.zshrc` <br> `exec 2>>( while read X; do print "\e[91m${X}\e[0m" > /dev/tty; done & )` <li> `source ~./zshrc` |
 
 ### Other
  | Tool | Description |
  |:-|:-|
+ | [Visual Studio Code](https://code.visualstudio.com/) | <ol><li> [Download the .deb package](https://code.visualstudio.com/docs/?dv=linux64_deb) <li> Download Extensions: <ul><li> Vim <li> Python <li> ESLint <li> LaTeX Workshop </ul> <li> Copy the [User Settings](vscodevim_user.json) into `settings.json` <li> `Ctrl+Shift+P > Python: Select Interpreter > Python 3.X` </ol>|
  | [Trello-Cli](https://github.com/mheap/trello-cli) | <ol><li> `sudo npm i trello-cli -g` <li> Configure: https://www.npmjs.com/package/trello-cli <li> `.zshrc > addcard(){trello add-card -b "Tasks" -l "Inbox" $1}` <li> `source ~/.zshrc` <li> `trello refresh` |
  | [Hexo](https://github.com/hexojs/hexo) | <ol><li> `sudo npm i hexo-cli -g` <li> `cd /your/hexo/project` <li> `npm install` |
  | [Peek](https://github.com/phw/peek) | <ol><li> `sudo add-apt-repository ppa:peek-developers/stable` <li> `sudo apt update` <li> `sudo apt install peek` |
