@@ -5,6 +5,7 @@
  * `sudo apt install libssl-dev`
  * `sudo apt install curl`
  * `sudo apt install cmake`
+ * `sudo apt install default-jdk`
  * `sudo apt install nodejs`
  * `sudo apt install npm`
  * `sudo apt install python3-pip`
