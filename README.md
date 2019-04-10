@@ -31,7 +31,7 @@
  | Pinta | Ubuntu Software |
  | Nvidia Driver | *Software & Updates > Additional Drivers* |
  | Desktop Slideshow | *Shotwell Photo Manager > Select Pictures > File > Set as Desktop Slideshow* |
- | [Git & Github](https://help.github.com/articles/connecting-to-github-with-ssh/) | <ol><li>`sudo apt install git` <li> https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/ <li> https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/ |
+ | [Git & Github](https://help.github.com/articles/connecting-to-github-with-ssh/) | <ol><li>`sudo apt install git` <li> `https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/` <li> `https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/` |
  | [Powerline Fonts](https://github.com/powerline/fonts) | <ol><li>`git clone https://github.com/powerline/fonts.git --depth=1` <li> `cd fonts` <li> `./install.sh` <li> `cd ..` <li> `rm -rf fonts` |
  | Gnome Theme | <ol><li> `sudo add-apt-repository -u ppa:snwh/ppa` <li> `sudo apt update` <li> `sudo apt install paper-icon-theme` <li> `sudo apt install gnome-tweak-tool` <li> *Tweaks > Appearance > Applications > Adwaita-dark* <li> *Tweaks > Appearance > Icons > Paper* |
 
@@ -63,6 +63,7 @@
  | [Trello-Cli](https://github.com/mheap/trello-cli) | <ol><li> `sudo npm i trello-cli -g` <li> Configure: https://www.npmjs.com/package/trello-cli <li> `.zshrc > addcard(){trello add-card -b "Tasks" -l "Inbox" $1}` <li> `source ~/.zshrc` <li> `trello refresh` |
  | [Hexo](https://github.com/hexojs/hexo) | <ol><li> `sudo npm i hexo-cli -g` <li> `cd /your/hexo/project` <li> `npm install` |
  | [Peek](https://github.com/phw/peek) | <ol><li> `sudo add-apt-repository ppa:peek-developers/stable` <li> `sudo apt update` <li> `sudo apt install peek` |
+ | [ag](https://github.com/ggreer/the_silver_searcher) / [sack](https://github.com/sampson-chen/sack) | <ol><li> `sudo apt install silversearcher-ag` <li> `git clone https://github.com/sampson-chen/sack.git` <li> `cd sack` <li> `chmod +x install_sack.sh` <li> `./install_sack.sh` <li> `cd ..` <li> `rm -rf sack` |
 
 ### Bonus: Keyboard Shortcuts
 | Shortcut | Description |
