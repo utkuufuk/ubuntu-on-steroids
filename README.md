@@ -65,6 +65,10 @@
  | [Peek](https://github.com/phw/peek) | <ol><li> `sudo add-apt-repository ppa:peek-developers/stable` <li> `sudo apt update` <li> `sudo apt install peek` |
  | [ag](https://github.com/ggreer/the_silver_searcher) / [sack](https://github.com/sampson-chen/sack) | <ol><li> `sudo apt install silversearcher-ag` <li> `git clone https://github.com/sampson-chen/sack.git` <li> `cd sack` <li> `chmod +x install_sack.sh` <li> `./install_sack.sh` <li> `cd ..` <li> `rm -rf sack` <li> `.zshrc > export PATH="$HOME/bin:$PATH"` <li> `source ~/.zshrc`|
 
+### Configure `hosts`
+ 1. Copy contents in `https://github.com/StevenBlack/hosts/blob/master/hosts` to `/etc/hosts`
+ 2. `sudo service network-manager restart`
+
 ### Bonus: Keyboard Shortcuts
 | Shortcut | Description |
 |:--|:--|
