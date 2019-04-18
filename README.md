@@ -6,20 +6,10 @@
  * `sudo apt install curl`
  * `sudo apt install cmake`
  * `sudo apt install default-jdk`
- * `sudo apt install nodejs`
- * `sudo apt install npm`
  * `sudo apt install python3-pip`
  * `sudo apt install python3-tk` *(optional)*
  * `sudo apt install python3-bs4` *(optional)*
  * `sudo pip3 install matplotlib` *(optional)*
-
-### Go
- 1. `sudo add-apt-repository ppa:longsleep/golang-backports`
- 2. `sudo apt-get update`
- 3. `sudo apt-get install golang-go`
- 4. Add the following lines to `.zshrc:`
-    * `export GOPATH=$HOME/go`
-    * `export PATH=$PATH:$GOROOT/bin:$GOPATH/bin`
 
 ### Standard Tools
  | Tool | Description |
@@ -54,6 +44,17 @@
  | [Zsh Autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) | <ol><li> `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions` <li> `.zshrc > plugins=(zsh-autosuggestions)` <li> `echo "bindkey '^ ' autosuggest-accept" >> $ZSH_CUSTOM/autosuggestion-settings.zsh` <li> `source ~/.zshrc` <li> `source $ZSH_CUSTOM/autosuggestion-settings.zsh` |
  | [Zsh Syntax Highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) | <ol><li> `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting` <li> `.zshrc > plugins=(zsh-syntax-highlighting)` <li> `source ~/.zshrc` |
   | Default Editor | <ol><li> `.zshrc > EDITOR=/usr/bin/vim` <li> `source ~/.zshrc` |
+
+### Node.js
+[Install & Configure Node.js](nodejs.md)
+
+### Go
+ 1. `sudo add-apt-repository ppa:longsleep/golang-backports`
+ 2. `sudo apt-get update`
+ 3. `sudo apt-get install golang-go`
+ 4. Add the following lines to `.zshrc:`
+    * `export GOPATH=$HOME/go`
+    * `export PATH=$PATH:$GOROOT/bin:$GOPATH/bin`
 
 ### Other
  | Tool | Description |
