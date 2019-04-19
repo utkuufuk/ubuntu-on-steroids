@@ -27,6 +27,10 @@
         {
             "before": ["k"],
             "after": ["g", "k"]
+        },
+        {
+            "before": ["Y"],
+            "after": ["y", "$"]
         }
     ],
     "vim.leader": "<space>",
@@ -34,8 +38,17 @@
         "<C-a>": false,
         "<C-f>": false
     },
-    "editor.wordWrapColumn": 120,
-    "workbench.colorTheme": "Monokai",
+    "editor.wordWrapColumn": 100,
+    "editor.rulers": [100],
     "latex-workshop.view.pdf.viewer": "tab",
-    "window.titleBarStyle": "custom"
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.colorTheme": "Dracula",
+    "window.titleBarStyle": "custom",
+    "editor.detectIndentation": false,
+    "editor.minimap.maxColumn": 100,
+    "editor.formatOnSave": false,
+    "[javascript]": {
+        "editor.formatOnSave": true
+    },
+    "prettier.tabWidth": 4
 }
