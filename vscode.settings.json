@@ -7,18 +7,18 @@
     "vim.hlsearch": true,
     "vim.insertModeKeyBindings": [
         {
-        "before": ["j", "j"],
-        "after": ["<Esc>"]
+            "before": ["j", "j"],
+            "after": ["<Esc>"]
         }
     ],
     "vim.normalModeKeyBindingsNonRecursive": [
         {
-        "before": ["<leader>", "d"],
-        "after": ["d", "d"]
+            "before": ["<leader>", "d"],
+            "after": ["d", "d"]
         },
         {
-        "before": ["<leader>", "<leader>"],
-        "commands": [":nohl"]
+            "before": ["<leader>", "<leader>"],
+            "commands": [":nohl"]
         },
         {
             "before": ["j"],
