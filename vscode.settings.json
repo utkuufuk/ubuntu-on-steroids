@@ -50,5 +50,8 @@
     "[javascript]": {
         "editor.formatOnSave": true
     },
-    "prettier.tabWidth": 4
+    "prettier.tabWidth": 4,
+    "prettier.bracketSpacing": false,
+    "prettier.eslintIntegration": true,
+    "prettier.printWidth": 100
 }
