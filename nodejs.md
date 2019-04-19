@@ -2,7 +2,8 @@
 ## Installation
 #### Install Node.js
  ```sh
- curl -sL https://deb.nodesource.com/setup_<version>.x | sudo -E bash -
+ # install nodejs 10.x
+ curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
  sudo apt install -y nodejs
  ```
 
