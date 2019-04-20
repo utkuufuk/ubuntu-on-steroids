@@ -46,13 +46,17 @@
     "window.titleBarStyle": "custom",
     "editor.detectIndentation": false,
     "editor.minimap.maxColumn": 100,
-    "editor.formatOnSave": false,
-    "[javascript]": {
-        "editor.formatOnSave": true
-    },
+    "editor.fontFamily": "'Input', 'monospace', monospace, 'Droid Sans Fallback'",
     "prettier.tabWidth": 4,
     "prettier.bracketSpacing": false,
     "prettier.eslintIntegration": true,
     "prettier.printWidth": 100,
-    "editor.fontFamily": "'Input', 'monospace', monospace, 'Droid Sans Fallback'"
+    "editor.formatOnSave": false,
+    "[javascript]": {
+        "editor.formatOnSave": true
+    },
+    "[css]": {
+        "editor.formatOnSave": true
+    }
 }
+
