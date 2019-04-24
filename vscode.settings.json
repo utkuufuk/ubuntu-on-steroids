@@ -40,7 +40,6 @@
     },
     "editor.wordWrapColumn": 100,
     "editor.rulers": [100],
-    "latex-workshop.view.pdf.viewer": "tab",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.colorTheme": "Dracula",
     "window.titleBarStyle": "custom",
