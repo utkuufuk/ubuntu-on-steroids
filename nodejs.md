@@ -11,8 +11,6 @@
  1. `cd ~ && mkdir .node_modules_global`
  2. `npm config set prefix=$HOME/.node_modules_global`
  3. `npm install npm@latest -g`
- 4. `.zshrc > export PATH="$HOME/.node_modules_global/bin:$PATH"`
- 5. `source ~/.zshrc`
 
 #### Update Npm
  ```sh

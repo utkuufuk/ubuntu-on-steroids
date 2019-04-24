@@ -34,6 +34,9 @@
  | [Vim Markdown Composer](https://github.com/euclio/vim-markdown-composer) | `curl https://sh.rustup.rs -sSf \| sh`  |
  | [Vimtex](https://github.com/lervag/vimtex) | <ol><li> `sudo apt install latexmk` <li> `sudo apt install texlive` <li> `sudo apt install texlive-latex-extra` <li> `mkdir ~/texmf` <li> `mkdir ~/texmf/tex` <li> Place the `.sty` files inside `tex` folder. |
 
+### Node.js
+[Install & Configure Node.js](nodejs.md)
+
 ### Terminal
  | Tool | Description |
  |:-|:-|
@@ -44,17 +47,7 @@
  | [Zsh Autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) | <ol><li> `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions` <li> `.zshrc > plugins=(zsh-autosuggestions)` <li> `echo "bindkey '^ ' autosuggest-accept" >> $ZSH_CUSTOM/autosuggestion-settings.zsh` <li> `source ~/.zshrc` <li> `source $ZSH_CUSTOM/autosuggestion-settings.zsh` |
  | [Zsh Syntax Highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) | <ol><li> `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting` <li> `.zshrc > plugins=(zsh-syntax-highlighting)` <li> `source ~/.zshrc` |
   | Default Editor | <ol><li> `.zshrc > EDITOR=/usr/bin/vim` <li> `source ~/.zshrc` |
-
-### Node.js
-[Install & Configure Node.js](nodejs.md)
-
-### Go
- 1. `sudo add-apt-repository ppa:longsleep/golang-backports`
- 2. `sudo apt-get update`
- 3. `sudo apt-get install golang-go`
- 4. Add the following lines to `.zshrc:`
-    * `export GOPATH=$HOME/go`
-    * `export PATH=$PATH:$GOROOT/bin:$GOPATH/bin`
+  | **PATH** | <ol><li> `.zshrc > export PATH="$HOME/.local/bin:$HOME/bin:$HOME/.node_modules_global/bin:$PATH"` <li> `source ~/.zshrc` |
 
 ### [Visual Studio Code](https://code.visualstudio.com/)
  1. [Download the .deb package](https://code.visualstudio.com/docs/?dv=linux64_deb) 
@@ -73,70 +66,10 @@
 ### Other
  | Tool | Description |
  |:-|:-|
- | [s](https://github.com/zquestz/s) | <ol><li> `go get -v github.com/zquestz/s` <li> `cd $GOPATH/src/github.com/zquestz/s` <li> `make` <li> `make install` </ol>|
  | [Trello-Cli](https://github.com/mheap/trello-cli) | <ol><li> `sudo npm i trello-cli -g` <li> Configure: https://www.npmjs.com/package/trello-cli <li> `.zshrc > addcard(){trello add-card -b "Tasks" -l "Inbox" $1}` <li> `source ~/.zshrc` <li> `trello refresh` |
  | [Hexo](https://github.com/hexojs/hexo) | <ol><li> `sudo npm i hexo-cli -g` <li> `cd /your/hexo/project` <li> `npm install` |
  | [Peek](https://github.com/phw/peek) | <ol><li> `sudo add-apt-repository ppa:peek-developers/stable` <li> `sudo apt update` <li> `sudo apt install peek` |
- | [ag](https://github.com/ggreer/the_silver_searcher) / [sack](https://github.com/sampson-chen/sack) | <ol><li> `sudo apt install silversearcher-ag` <li> `git clone https://github.com/sampson-chen/sack.git` <li> `cd sack` <li> `chmod +x install_sack.sh` <li> `./install_sack.sh` <li> `cd ..` <li> `rm -rf sack` <li> `.zshrc > export PATH="$HOME/bin:$PATH"` <li> `source ~/.zshrc`|
-
-### Configure `hosts`
- 1. Copy contents in `https://github.com/StevenBlack/hosts/blob/master/hosts` to `/etc/hosts`
- 2. Append the following in order to block YouTube ads:
- ```
- 0.0.0.0 ads.doubleclick.net
- 0.0.0.0 s.ytimg.com
- 0.0.0.0 ad.youtube.com
- 0.0.0.0 ads.youtube.com
- 0.0.0.0 clients1.google.com
- 0.0.0.0 dts.innovid.com
- 0.0.0.0 googleads.g.doubleclick.net
- 0.0.0.0 googleads4.g.doubleclick.net
- 0.0.0.0 pagead2.googlesyndication.com
- 0.0.0.0 pixel.moatads.com
- 0.0.0.0 rtd.tubemogul.com
- 0.0.0.0 s.youtube.com
- 0.0.0.0 s.innovid.com
- 0.0.0.0 pubads.g.doubleclick.net
- 0.0.0.0 ssl.google-analytics.com
- 0.0.0.0 www-google-analytics.l.google.com
- 0.0.0.0 stats.g.doubleclick.net
- 0.0.0.0 clients.l.google.com
- 0.0.0.0 pagead.l.doubleclick.net
- 0.0.0.0 www-googletagmanager.l.google.com
- 0.0.0.0 googleadapis.l.google.com
- 0.0.0.0 s0.2mdn.net
- 0.0.0.0 googleads.g.doubleclick.net
- 0.0.0.0 ad.doubleclick.net
- 0.0.0.0 files.adform.net
- 0.0.0.0 secure-ds.serving-sys.com
- 0.0.0.0 securepubads.g.doubleclick.net
- 0.0.0.0 s.youtube.com
- 0.0.0.0 2975c.v.fwmrm.net
- 0.0.0.0 static.doubleclick.net
- 0.0.0.0 googleadservices.com
- 0.0.0.0 ad-g.doubleclick.net
- 0.0.0.0 ad.doubleclick.net
- 0.0.0.0 ad.mo.doubleclick.net
- 0.0.0.0 doubleclick.net
- 0.0.0.0 googleads.g.doubleclick.net
- 0.0.0.0 pagead.googlesyndication.com
- 0.0.0.0 pagead1.googlesyndication.com
- 0.0.0.0 pagead2.googlesyndication.com
- 0.0.0.0 www.googleadservices.com
- 0.0.0.0 youtube-nocookie.com
- 0.0.0.0 www.youtube-nocookie.com
- 0.0.0.0 analytic-google.com
- 0.0.0.0 www.analytic-google.com
- 0.0.0.0 www.googletagservices.com
- 0.0.0.0 fwmrm.net
- 0.0.0.0 innovid.com
- 0.0.0.0 2mdn.net
- 0.0.0.0 0.0.0.0
- 0.0.0.0 fwmrm.net
- 0.0.0.0 innovid.com
- 0.0.0.0 2mdn.net
- ```
- 3. `sudo service network-manager restart`
+ | [ag](https://github.com/ggreer/the_silver_searcher) / [sack](https://github.com/sampson-chen/sack) | <ol><li> `sudo apt install silversearcher-ag` <li> `git clone https://github.com/sampson-chen/sack.git` <li> `cd sack` <li> `chmod +x install_sack.sh` <li> `./install_sack.sh` <li> `cd ..` <li> `rm -rf sack` |
 
 ### Bonus: Keyboard Shortcuts
 | Shortcut | Description |
