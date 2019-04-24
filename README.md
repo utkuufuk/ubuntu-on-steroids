@@ -18,7 +18,7 @@
  | Dropbox | Ubuntu Software |
  | Open Drive | Ubuntu Software |
  | Spotify | Ubuntu Software |
- | Pinta | Ubuntu Software |
+ | GIMP | Ubuntu Software |
  | Nvidia Driver | *Software & Updates > Additional Drivers* |
  | Desktop Slideshow | *Shotwell Photo Manager > Select Pictures > File > Set as Desktop Slideshow* |
  | [Git & Github](https://help.github.com/articles/connecting-to-github-with-ssh/) | <ol><li>`sudo apt install git` <li> `https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/` <li> `https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/` |
