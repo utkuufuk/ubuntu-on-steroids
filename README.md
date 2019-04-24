@@ -56,10 +56,22 @@
     * `export GOPATH=$HOME/go`
     * `export PATH=$PATH:$GOROOT/bin:$GOPATH/bin`
 
+### [Visual Studio Code](https://code.visualstudio.com/)
+ 1. [Download the .deb package](https://code.visualstudio.com/docs/?dv=linux64_deb) 
+ 2. Download Extensions: 
+    * Vim 
+    * Python
+    * ESLint
+    * Prettier
+    * Dracula Ofiicial
+    * Live Server
+    * ES7 React/Redux/GraphQL/React-Native snippets
+ 3. Copy the [User Settings](vscode.settings.json) into `settings.json`
+ 4. `Ctrl+Shift+P > Python: Select Interpreter > Python 3.X`
+
 ### Other
  | Tool | Description |
  |:-|:-|
- | [Visual Studio Code](https://code.visualstudio.com/) | <ol><li> [Download the .deb package](https://code.visualstudio.com/docs/?dv=linux64_deb) <li> Download Extensions: <ul><li> Vim <li> Python <li> ESLint <li> LaTeX Workshop </ul> <li> Copy the [User Settings](vscodevim_user.json) into `settings.json` <li> `Ctrl+Shift+P > Python: Select Interpreter > Python 3.X` </ol>|
  | [s](https://github.com/zquestz/s) | <ol><li> `go get -v github.com/zquestz/s` <li> `cd $GOPATH/src/github.com/zquestz/s` <li> `make` <li> `make install` </ol>|
  | [Trello-Cli](https://github.com/mheap/trello-cli) | <ol><li> `sudo npm i trello-cli -g` <li> Configure: https://www.npmjs.com/package/trello-cli <li> `.zshrc > addcard(){trello add-card -b "Tasks" -l "Inbox" $1}` <li> `source ~/.zshrc` <li> `trello refresh` |
  | [Hexo](https://github.com/hexojs/hexo) | <ol><li> `sudo npm i hexo-cli -g` <li> `cd /your/hexo/project` <li> `npm install` |
