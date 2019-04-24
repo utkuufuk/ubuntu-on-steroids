@@ -68,6 +68,7 @@
     * ES7 React/Redux/GraphQL/React-Native snippets
  3. Copy the [User Settings](vscode.settings.json) into `settings.json`
  4. `Ctrl+Shift+P > Python: Select Interpreter > Python 3.X`
+ 5. `npm install -g eslint`
 
 ### Other
  | Tool | Description |
