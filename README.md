@@ -71,11 +71,3 @@
  | [Hexo](https://github.com/hexojs/hexo) | <ol><li> `sudo npm i hexo-cli -g` <li> `cd /your/hexo/project` <li> `npm install` |
  | [Peek](https://github.com/phw/peek) | <ol><li> `sudo add-apt-repository ppa:peek-developers/stable` <li> `sudo apt update` <li> `sudo apt install peek` |
  | [ag](https://github.com/ggreer/the_silver_searcher) / [sack](https://github.com/sampson-chen/sack) | <ol><li> `sudo apt install silversearcher-ag` <li> `git clone https://github.com/sampson-chen/sack.git` <li> `cd sack` <li> `chmod +x install_sack.sh` <li> `./install_sack.sh` <li> `cd ..` <li> `rm -rf sack` |
-
-### Bonus: Keyboard Shortcuts
-| Shortcut | Description |
-|:--|:--|
-| `Super+D or Ctrl+Alt+D` | Show Desktop |
-| `Ctrl+Alt+Arrow` | Move Between Workspaces |
-| `Super+Arrow` | Snap Window |
-| `Alt+F2` | Run Command |
