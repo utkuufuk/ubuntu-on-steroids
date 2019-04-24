@@ -33,6 +33,7 @@
  | [Vim-Plug](https://github.com/junegunn/vim-plug) | `curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim` |
  | [Vim Markdown Composer](https://github.com/euclio/vim-markdown-composer) | `curl https://sh.rustup.rs -sSf \| sh`  |
  | [Vimtex](https://github.com/lervag/vimtex) | <ol><li> `sudo apt install latexmk` <li> `sudo apt install texlive` <li> `sudo apt install texlive-latex-extra` <li> `mkdir ~/texmf` <li> `mkdir ~/texmf/tex` <li> Place the `.sty` files inside `tex` folder. |
+  | Install Plugins | <ol><li> `vim ~/.config/nvim/init.vim` <li> `:PlugInstall` |
 
 ### Node.js
 [Install & Configure Node.js](nodejs.md)
