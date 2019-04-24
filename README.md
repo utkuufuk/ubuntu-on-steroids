@@ -37,7 +37,7 @@
 ### Terminal
  | Tool | Description |
  |:-|:-|
- | [Tilix](https://github.com/gnunn1/tilix) | `sudo apt install tilix` |
+ | [Tilix](https://github.com/gnunn1/tilix) | <ol><li>`sudo apt install tilix`<li>Window Style: Disable CSD, hide toolbar<li>Terminal title style: None<li>Color scheme: Monokai Dark<li>Settings > Keyboard > Shortcuts > replace default `Ctrl+Alt+T` with custom shortcut for Tilix<li>Disable *Hide all normal windows* shortcut<li>Replace *Switch to next session* shortcut with `Ctrl+T` |
  | [Zsh](https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH) | <ol><li> `sudo apt install zsh` <li> `chsh -s $(which zsh)` <li> `gnome-session-quit` <li> *Relog* <li> `echo $SHELL` |
  | [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) | `sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"` |
  | [Spaceship Prompt](https://github.com/denysdovhan/spaceship-prompt) | <ol><li> `git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"` <li> `ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"` <li> `.zshrc` > `ZSH_THEME="spaceship"` <li> `source ~/.zshrc` |
