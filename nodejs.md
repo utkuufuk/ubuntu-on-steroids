@@ -1,9 +1,9 @@
-# Node.js Cheatsheet
+# Node.js
 ## Installation
 #### Install Node.js
  ```sh
- # install nodejs 10.x
- curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+ # install nodejs 11
+ curl -sL https://deb.nodesource.com/setup_11.x | sudo -E bash -
  sudo apt install -y nodejs
  ```
 
