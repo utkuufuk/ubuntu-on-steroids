@@ -21,11 +21,11 @@
 #### Fonts
  1. [Input Fonts](http://input.fontbureau.com/download/index.html?size=14&language=python&theme=monokai&family=InputMono&width=400&weight=400&line-height=1.3&a=ss&g=ss&i=serifs_round&l=serifs_round&zero=slash&asterisk=height&braces=0&preset=default&customize=please)
   2. Powerline Fonts
-  * `git clone https://github.com/powerline/fonts.git --depth=1`
-  * `cd fonts`
-  * `./install.sh`
-  * `cd ..`
-  * `rm -rf fonts`
+    * `git clone https://github.com/powerline/fonts.git --depth=1`
+    * `cd fonts`
+    * `./install.sh`
+    * `cd ..`
+    * `rm -rf fonts`
 
 #### Gnome Theme
   * `sudo add-apt-repository -u ppa:snwh/ppa`
