@@ -1,7 +1,7 @@
 ### Neovim
  1. [Install Neovim](https://github.com/neovim/neovim)
     1. `sudo apt install neovim`
-    2. `curl -o ~/.config/nvim/init.vim --create-dirs https://raw.githubusercontent.com/utkuufuk/vim-cheatsheet/master/init.vim`
+    2. `curl -o ~/.config/nvim/init.vim --create-dirs https://raw.githubusercontent.com/utkuufuk/ubuntu-on-steroids/master/init.vim`
 
  2. [Install Vim-Plug](https://github.com/junegunn/vim-plug)
     > `curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim`

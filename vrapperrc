@@ -1,0 +1,28 @@
+set clipboard^=unnamedplus
+
+set title
+
+" Ensure that the cursor is at least 5 lines above bottom
+set scrolloff=5
+
+" Backspace works as expected (across lines)
+set backspace=indent,eol,start
+
+" Searching behaves like a web browser
+set incsearch ignorecase smartcase hlsearch
+
+" Change leader to spacebar
+let g:mapleader=' '
+
+" <leader><leader> clears previous search highlighting
+map <silent> <leader><leader> :nohlsearch<cr>
+
+" <leader>d deletes without filling the yank buffer
+nmap <silent> <leader>d "_d
+vmap <silent> <leader>d "_d
+
+" Make Y behavior consistent with C and D 
+map Y y$
+
+" Map escape key to jj -- much faster to exit insert mode
+imap jj <esc>
