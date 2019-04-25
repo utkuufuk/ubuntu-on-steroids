@@ -46,7 +46,7 @@
  | [Spaceship Prompt](https://github.com/denysdovhan/spaceship-prompt) | <ol><li> `git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"` <li> `ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"` <li> `.zshrc` > `ZSH_THEME="spaceship"` <li> `source ~/.zshrc` |
  | [Zsh Autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) | <ol><li> `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions` <li> `.zshrc > plugins=(zsh-autosuggestions)` <li> `echo "bindkey '^ ' autosuggest-accept" >> $ZSH_CUSTOM/autosuggestion-settings.zsh` <li> `source ~/.zshrc` <li> `source $ZSH_CUSTOM/autosuggestion-settings.zsh` |
  | [Zsh Syntax Highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) | <ol><li> `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting` <li> `.zshrc > plugins=(zsh-syntax-highlighting)` <li> `source ~/.zshrc` |
-  | Default Editor | <ol><li> `.zshrc > EDITOR=/usr/bin/vim` <li> `source ~/.zshrc` |
+  | Default Editor | <ol><li> `.zshrc > export EDITOR=/usr/bin/vim` <li> `source ~/.zshrc` |
   | **PATH** | <ol><li> `.zshrc > export PATH="$HOME/.local/bin:$HOME/bin:$HOME/.node_modules_global/bin:$PATH"` <li> `source ~/.zshrc` |
 
 ### [Visual Studio Code](https://code.visualstudio.com/)
@@ -61,6 +61,7 @@
     * ES7 React/Redux/GraphQL/React-Native snippets
     * REST Client
     * GitLens
+    * Material Icon Theme
  3. Copy the [User Settings](vscode.settings.json) into `settings.json`
  4. `Ctrl+Shift+P > Python: Select Interpreter > Python 3.X`
  5. `npm install -g eslint`
