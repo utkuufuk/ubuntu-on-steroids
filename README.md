@@ -4,7 +4,7 @@
  2. [Basic Tools](#basic-tools)
  3. [Neovim](#neovim)
  4. [Node.js](#nodejs)
- 5. [Terminal & Shell](#terminal-&-shell)
+ 5. [Terminal & Shell](#terminal--shell)
  6. [Visual Studio Code](#visual-studio-code)
  7. [Misc](#misc)
 
