@@ -22,8 +22,7 @@
  | Nvidia Driver | *Software & Updates > Additional Drivers* |
  | Desktop Slideshow | *Shotwell Photo Manager > Select Pictures > File > Set as Desktop Slideshow* |
  | [Git & Github](https://help.github.com/articles/connecting-to-github-with-ssh/) | <ol><li>`sudo apt install git` <li> `https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/` <li> `https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/` |
-  | Fonts | <ol><li>[Input](http://input.fontbureau.com/download/index.html?size=14&language=python&theme=monokai&family=InputMono&width=400&weight=400&line-height=1.3&a=ss&g=ss&i=serifs_round&l=serifs_round&zero=slash&asterisk=height&braces=0&preset=default&customize=please) <li> `cd fonts` <li> `./install.sh` <li> `cd ..` <li> `rm -rf fonts` |
- | [Powerline Fonts](https://github.com/powerline/fonts) | <ol><li>`git clone https://github.com/powerline/fonts.git --depth=1` <li> `cd fonts` <li> `./install.sh` <li> `cd ..` <li> `rm -rf fonts` |
+ | [Fonts](https://github.com/powerline/fonts) | <ol><li>[Input Fonts](http://input.fontbureau.com/download/index.html?size=14&language=python&theme=monokai&family=InputMono&width=400&weight=400&line-height=1.3&a=ss&g=ss&i=serifs_round&l=serifs_round&zero=slash&asterisk=height&braces=0&preset=default&customize=please)<li>Powerline Fonts<ol><li>`git clone https://github.com/powerline/fonts.git --depth=1` <li> `cd fonts` <li> `./install.sh` <li> `cd ..` <li> `rm -rf fonts` |
  | Gnome Theme | <ol><li> `sudo add-apt-repository -u ppa:snwh/ppa` <li> `sudo apt update` <li> `sudo apt install paper-icon-theme` <li> `sudo apt install gnome-tweak-tool` <li> *Tweaks > Appearance > Applications > Adwaita-dark* <li> *Tweaks > Appearance > Icons > Paper* |
 
 ### Vim
