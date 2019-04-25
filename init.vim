@@ -136,9 +136,3 @@ if has('nvim')
   set guicursor=i-ci:ver30-iCursor-blinkwait300-blinkon200-blinkoff150
 endif
 
-augroup python
-    autocmd!
-    autocmd FileType python
-                \   syn keyword pythonSelf self
-                \ | highlight def link pythonSelf Special
-augroup end
