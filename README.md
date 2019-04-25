@@ -32,6 +32,7 @@
  | [Vim-Plug](https://github.com/junegunn/vim-plug) | `curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim` |
  | [Vim Markdown Composer](https://github.com/euclio/vim-markdown-composer) | `curl https://sh.rustup.rs -sSf \| sh`  |
  | [Vimtex](https://github.com/lervag/vimtex) | <ol><li> `sudo apt install latexmk` <li> `sudo apt install texlive` <li> `sudo apt install texlive-latex-extra` <li> `mkdir ~/texmf` <li> `mkdir ~/texmf/tex` <li> Place the `.sty` files inside `tex` folder. |
+  | Install Plugins | <ol><li> `vim ~/.config/nvim/init.vim` <li> `:PlugInstall` |
 
 ### Node.js
 [Install & Configure Node.js](nodejs.md)
@@ -71,11 +72,3 @@
  | [Hexo](https://github.com/hexojs/hexo) | <ol><li> `sudo npm i hexo-cli -g` <li> `cd /your/hexo/project` <li> `npm install` |
  | [Peek](https://github.com/phw/peek) | <ol><li> `sudo add-apt-repository ppa:peek-developers/stable` <li> `sudo apt update` <li> `sudo apt install peek` |
  | [ag](https://github.com/ggreer/the_silver_searcher) / [sack](https://github.com/sampson-chen/sack) | <ol><li> `sudo apt install silversearcher-ag` <li> `git clone https://github.com/sampson-chen/sack.git` <li> `cd sack` <li> `chmod +x install_sack.sh` <li> `./install_sack.sh` <li> `cd ..` <li> `rm -rf sack` |
-
-### Bonus: Keyboard Shortcuts
-| Shortcut | Description |
-|:--|:--|
-| `Super+D or Ctrl+Alt+D` | Show Desktop |
-| `Ctrl+Alt+Arrow` | Move Between Workspaces |
-| `Super+Arrow` | Snap Window |
-| `Alt+F2` | Run Command |
