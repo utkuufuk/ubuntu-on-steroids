@@ -28,9 +28,9 @@
     * `rm -rf fonts`
 
 #### Gnome Theme
-  * `sudo add-apt-repository -u ppa:snwh/ppa`
-  * `sudo apt update`
-  * `sudo apt install paper-icon-theme`
-  * `sudo apt install gnome-tweak-tool`
-  * *Tweaks > Appearance > Applications > Adwaita-dark*
-  * *Tweaks > Appearance > Icons > Paper*
+    * `sudo add-apt-repository -u ppa:snwh/ppa`
+    * `sudo apt update`
+    * `sudo apt install paper-icon-theme`
+    * `sudo apt install gnome-tweak-tool`
+    * *Tweaks > Appearance > Applications > Adwaita-dark*
+    * *Tweaks > Appearance > Icons > Paper*
