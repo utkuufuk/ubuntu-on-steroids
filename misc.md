@@ -1,6 +1,4 @@
 ### Misc
- * [Hexo](https://github.com/hexojs/hexo)
-    * `npm i hexo-cli -g`
  * [Peek](https://github.com/phw/peek)
     * `sudo add-apt-repository ppa:peek-developers/stable`
     * `sudo apt update`
