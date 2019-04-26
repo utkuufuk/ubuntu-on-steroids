@@ -159,6 +159,7 @@
     * REST Client
     * GitLens
     * Material Icon Theme
+    * Auto Rename Tag
  3. Copy the [settings file](vscode.settings.json) contents into `settings.json`
  4. `Ctrl+Shift+P > Python: Select Interpreter > Python 3.X`
  5. `npm install -g eslint`
