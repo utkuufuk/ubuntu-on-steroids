@@ -50,6 +50,7 @@
     "prettier.bracketSpacing": false,
     "prettier.eslintIntegration": true,
     "prettier.printWidth": 100,
+    "editor.minimap.enabled": false,
     "editor.formatOnSave": false,
     "[javascript]": {
         "editor.formatOnSave": true
