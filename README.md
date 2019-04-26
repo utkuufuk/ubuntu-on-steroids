@@ -41,7 +41,7 @@
  3. [Add SSH Key to Github Account](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)
 
 #### Fonts
- 1. [Input Fonts](http://input.fontbureau.com/download/index.html?size=14&language=python&theme=monokai&family=InputMono&width=400&weight=400&line-height=1.3&a=ss&g=ss&i=serifs_round&l=serifs_round&zero=slash&asterisk=height&braces=0&preset=default&customize=please)
+ 1. [Input Fonts](http://input.fontbureau.com/download/index.html?size=15&language=python&theme=monokai&family=InputMono&width=300&weight=400&line-height=1.3&a=ss&g=ss&i=serifs_round&l=serifs_round&zero=slash&asterisk=height&braces=0&preset=default&customize=please)
   2. Powerline Fonts
      * `git clone https://github.com/powerline/fonts.git --depth=1`
      * `cd fonts`
