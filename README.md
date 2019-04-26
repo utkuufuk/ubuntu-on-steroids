@@ -1,14 +1,16 @@
 # Ubuntu on Steroids
-## Table of Contents
+### Table of Contents
  1. [Core Dependencies](#core-dependencies)
- 2. [Basic Tools](#basic-tools)
- 3. [Neovim](#neovim)
- 4. [Node.js](#nodejs)
- 5. [Terminal & Shell](#terminal--shell)
- 6. [Visual Studio Code](#visual-studio-code)
- 7. [Misc](#misc)
+ 2. [Basic Tools & Drivers](#basic-tools--drivers)
+ 3. [Git & Github](#git--github)
+ 4. [Theme](#theme)
+ 5. [Neovim](#neovim)
+ 6. [Node.js](#nodejs)
+ 7. [Terminal & Shell](#terminal--shell)
+ 8. [Visual Studio Code](#visual-studio-code)
+ 9. [Misc](#misc)
 
-## Core Dependencies
+### Core Dependencies
  * `sudo apt install python-dev`
  * `sudo apt install python3-dev`
  * `sudo apt install libssl-dev`
@@ -16,11 +18,10 @@
  * `sudo apt install cmake`
  * `sudo apt install default-jdk`
  * `sudo apt install python3-pip`
- * `sudo apt install python3-tk` *(optional)*
- * `sudo apt install python3-bs4` *(optional)*
- * `sudo pip3 install matplotlib` *(optional)*
+ * `sudo apt install python3-tk`
+<br>
 
-## Basic Tools
+### Basic Tools & Drivers
 #### KeePass 
 > `sudo apt install keepass2`
 
@@ -31,23 +32,29 @@
 
 #### Nvidia Driver
 > *Software & Updates > Additional Drivers*
+<br>
 
-#### Desktop Slideshow
-> *Shotwell Photo Manager > Select Pictures > File > Set as Desktop Slideshow* |
-
-#### [Git & Github](https://help.github.com/articles/connecting-to-github-with-ssh/)
+### Git & Github
+#### Install Git & Configure SSH
  1. `sudo apt install git`
  2. [Generate SSH Key](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)
  3. [Add SSH Key to Github Account](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)
 
+#### [Oh My Repos](https://github.com/utkuufuk/oh-my-repos)
+ 1. `sudo apt install myrepos`
+ 2. `git clone https://github.com/utkuufuk/oh-my-repos`
+ 3. `pip3 install oh-my-repos/.`
+ 4. `rm -rf oh-my-repos`
+<br>
+
+### Theme
 #### Fonts
- 1. [Input Fonts](http://input.fontbureau.com/download/index.html?size=15&language=python&theme=monokai&family=InputMono&width=300&weight=400&line-height=1.3&a=ss&g=ss&i=serifs_round&l=serifs_round&zero=slash&asterisk=height&braces=0&preset=default&customize=please)
-  2. Powerline Fonts
-     * `git clone https://github.com/powerline/fonts.git --depth=1`
-     * `cd fonts`
-     * `./install.sh`
-     * `cd ..`
-     * `rm -rf fonts`
+ 1. [Input](http://input.fontbureau.com/download/index.html?size=15&language=python&theme=monokai&family=InputMono&width=300&weight=400&line-height=1.3&a=ss&g=ss&i=serifs_round&l=serifs_round&zero=slash&asterisk=height&braces=0&preset=default&customize=please) *(Dowonload & Install)*
+ 2. [Hack](https://github.com/source-foundry/Hack/releases/download/v3.003/Hack-v3.003-ttf.zip) *(Dowonload & Install)*
+ 3. Source Code Pro
+    * `git clone --depth 1 --branch release https://github.com/adobe-fonts/source-code-pro.git ~/.fonts/adobe-fonts/source-code-pro`
+    * `fc-cache -f -v ~/.fonts/adobe-fonts/source-code-pro`
+<br>
 
 #### Gnome Theme
   * `sudo add-apt-repository -u ppa:snwh/ppa`
@@ -56,8 +63,13 @@
   * `sudo apt install gnome-tweak-tool`
   * *Tweaks > Appearance > Applications > Adwaita-dark*
   * *Tweaks > Appearance > Icons > Paper*
+  * *Tweaks > Fonts > [your_favourite_font]*
 
-## Neovim
+#### Desktop Slideshow
+> *Shotwell Photo Manager > Select Pictures > File > Set as Desktop Slideshow*
+<br>
+
+### Neovim
  1. [Install Neovim](https://github.com/neovim/neovim)
     1. `sudo apt install neovim`
     2. `curl -o ~/.config/nvim/init.vim --create-dirs https://raw.githubusercontent.com/utkuufuk/ubuntu-on-steroids/master/init.vim`
@@ -78,9 +90,9 @@
     3. Activate Plugins
         * `vim ~/.config/nvim/init.vim`
         * `:PlugInstall`
+<br>
 
-## Node.js
-### Installation
+### Node.js
 #### Install Node.js
  ```sh
  # install nodejs 11
@@ -93,33 +105,17 @@
  2. `npm config set prefix=$HOME/.node_modules_global`
  3. `npm install npm@latest -g`
 
-#### Update Npm
- ```sh
- npm install npm@latest -g 
- npm rebuild
- ```
-
 #### Configure Defaults
  ```sh
  npm config set init.author.name <name>
  npm config set init.author.email <email>
  ```
 
-### Useful Commands
-For applicable commands below, add `-g` for *global* packages.
+(See [additional tips](./nodejs_tips.md))
+<br>
 
-| Command               | Description                           |
-|:----------------------|:--------------------------------------|
-| `npm ls --depth=0`    | List installed packages               |
-| `npm outdated`        | List outdated packages                |
-| `npm dedupe`          | Reduce duplication in package tree    |
-| `npm prune`           | Remove extraneous packages            |
-
-### `package.json`
-[Configuring package.json](https://docs.npmjs.com/files/package.json)
-
-## Terminal & Shell
-#### [Install Tilix](https://github.com/gnunn1/tilix)
+### Terminal & Shell
+#### [Tilix](https://github.com/gnunn1/tilix)
  * `sudo apt install tilix`
  * Window Style: Disable CSD, hide toolbar
  * Terminal title style: None
@@ -149,8 +145,9 @@ For applicable commands below, add `-g` for *global* packages.
  6. Configure `.zshrc`
     * `curl -o ~/.zshrc https://raw.githubusercontent.com/utkuufuk/ubuntu-on-steroids/master/.zshrc`
     * `source ~/.zshrc`
+<br>
 
-## Visual Studio Code
+### Visual Studio Code
  1. [Download the .deb package](https://code.visualstudio.com/docs/?dv=linux64_deb) 
  2. Download Extensions
     * Vim 
@@ -166,8 +163,9 @@ For applicable commands below, add `-g` for *global* packages.
  3. Copy the [settings file](vscode.settings.json) contents into `settings.json`
  4. `Ctrl+Shift+P > Python: Select Interpreter > Python 3.X`
  5. `npm install -g eslint`
+<br>
 
-## Misc
+### Misc
  * [Peek](https://github.com/phw/peek)
     * `sudo add-apt-repository ppa:peek-developers/stable`
     * `sudo apt update`
