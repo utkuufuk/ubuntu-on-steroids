@@ -115,13 +115,22 @@
 
 ### Terminal & Shell
 #### [Tilix](https://github.com/gnunn1/tilix)
- * `sudo apt install tilix`
- * Window Style: Disable CSD, hide toolbar
- * Terminal title style: None
- * Color scheme: Monokai Dark
- * Settings > Keyboard > Shortcuts > replace default `Ctrl+Alt+T` with custom shortcut for Tilix
- * Disable *Hide all normal windows* shortcut
- * Replace *Switch to next session* shortcut with `Ctrl+T`
+ 1. Install Tilix
+    > `sudo apt install tilix`
+ 2. Customize Tilix Appearance
+    * *Preferences > Appearance > Window Style > Disable CSD && hide toolbar*
+    * *Preferences > Appearance > Terminal Title Style > None*
+    * *Preferences > Profile > Color > Color scheme > Monokai Dark*
+ 3. Configure Tilix Keyboard Shortcuts
+    * *Preferences > Shortcuts > Replace **`Switch to next session`** shortcut with **`Ctrl+T`***
+    * *Preferences > Shortcuts > Replace **`Resize the terminal down`** shortcut with **`Shift+Ctrl+Down`***
+    * *Preferences > Shortcuts > Replace **`Resize the terminal up`** shortcut with **`Shift+Ctrl+Up`***
+    * *Preferences > Shortcuts > Replace **`Resize the terminal right`** shortcut with **`Shift+Ctrl+Right`***
+    * *Preferences > Shortcuts > Replace **`Resize the terminal left`** shortcut with **`Shift+Ctrl+Left`***
+ 4. Configure System Keyboard Shortcuts
+    * *Keyboard Shortcuts > Remove Default Action for **`Ctrl+Alt+T`***
+    * *Keyboard Shortcuts > Bind **`Ctrl+Alt+T`** to Custom Shortcut for Launching Tilix*
+    * *Keyboard Shortcuts > Disable Shortcut for **`Hide all normal windows`***
 
 #### [Zsh](https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH)
  1. Install Zsh
