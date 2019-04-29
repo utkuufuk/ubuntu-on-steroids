@@ -10,6 +10,7 @@
  8. [Visual Studio Code](#visual-studio-code)
  9. [Docker](#docker)
  10. [Misc](#misc)
+ 11. [DigitalOcean](#digitalocean)
 
 ### Core Dependencies
  * `sudo apt install python-dev`
@@ -212,3 +213,7 @@ sudo systemctl status docker
     * `./install_sack.sh`
     * `cd ..`
     * `rm -rf sack`
+<br>
+
+### DigitalOcean
+[Initial Server Setup](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-18-04)
