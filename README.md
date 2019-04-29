@@ -207,10 +207,8 @@ sudo systemctl status docker
  * [ag](https://github.com/ggreer/the_silver_searcher) & [sack](https://github.com/sampson-chen/sack)
     * `sudo apt install silversearcher-ag`
     * `git clone https://github.com/sampson-chen/sack.git`
-    * `cd sack`
-    * `chmod +x install_sack.sh`
-    * `./install_sack.sh`
-    * `cd ..`
+    * `chmod +x sack/install_sack.sh`
+    * `sack/install_sack.sh`
     * `rm -rf sack`
 <br>
 
