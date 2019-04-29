@@ -8,7 +8,8 @@
  6. [Node.js](#nodejs)
  7. [Terminal & Shell](#terminal--shell)
  8. [Visual Studio Code](#visual-studio-code)
- 9. [Misc](#misc)
+ 9. [Docker](#docker)
+ 10. [Misc](#misc)
 
 ### Core Dependencies
  * `sudo apt install python-dev`
