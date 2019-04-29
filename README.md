@@ -113,6 +113,7 @@
 
 (See [additional tips](./nodejs_tips.md))
 <br>
+<br>
 
 ### Terminal & Shell
 #### [Tilix](https://github.com/gnunn1/tilix)
@@ -196,6 +197,7 @@ sudo apt install docker-ce
 # 6. verify service status
 sudo systemctl status docker
 ```
+<br>
 
 ### Misc
  * [Peek](https://github.com/phw/peek)
