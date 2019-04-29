@@ -100,5 +100,6 @@ EDITOR=/usr/bin/vim
 
 alias python=python3
 alias pip=pip3
+alias vim=nvim
 
 export PATH="$HOME/.local/bin:$HOME/bin:$HOME/.node_modules_global/bin:$PATH"
