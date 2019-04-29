@@ -174,6 +174,28 @@
  5. `npm install -g eslint`
 <br>
 
+### Docker
+``` sh
+# 1. remove any older versions
+sudo apt purge docker lxc-docker docker-engine docker.io
+
+# 2. install prerequisites
+sudo apt install apt-transport-https ca-certificates software-properties-common
+
+# 3. import official GPG key & verify signature
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add
+
+# 4. add docker respository
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+
+# 5. install docker
+sudo apt update
+sudo apt install docker-ce
+
+# 6. verify service status
+sudo systemctl status docker
+```
+
 ### Misc
  * [Peek](https://github.com/phw/peek)
     * `sudo add-apt-repository ppa:peek-developers/stable`
