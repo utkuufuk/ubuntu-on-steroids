@@ -207,6 +207,12 @@ sudo usermod -aG docker $USER
 ``` sh
 # 8. verify that you can run this command without 'sudo'
 docker run hello-world
+
+# 9. install docker-compose 1.24.0 (better check newer versions)
+sudo curl -L "https://github.com/docker/compose/releases/download/1.24.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+# 10. apply executable permission
+sudo chmod +x /usr/local/bin/docker-compose
 ```
 
 See [cheatsheet](./docker.md) for more info.

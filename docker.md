@@ -59,3 +59,33 @@ docker logout
 # upload image to public registry
 docker push <username>/<repository>:<tag>
 ```
+
+#### Docker Compose
+```sh
+# build images
+docker-compose build
+
+# build missing images & run containers
+docker-compose up
+
+# re-build images if Dockerfile or image files have changed
+docker-compose up --build
+
+# start in detached mode
+docker-compose up -d
+
+# stop containers
+docker-compose down
+
+# list containers
+docker-compose ps
+
+# access all container logs
+docker-compose logs
+
+# push images to registry
+docker-compose push
+
+# pull images into a new machine
+docker-compose pull
+```
