@@ -213,15 +213,21 @@ docker run hello-world
 
 ### Misc
  * [Peek](https://github.com/phw/peek)
-    * `sudo add-apt-repository ppa:peek-developers/stable`
-    * `sudo apt update`
-    * `sudo apt install peek`
+    ```sh
+    sudo add-apt-repository ppa:peek-developers/stable
+    sudo apt update && sudo apt install peek
+    ```
  * [ag](https://github.com/ggreer/the_silver_searcher) & [sack](https://github.com/sampson-chen/sack)
-    * `sudo apt install silversearcher-ag`
-    * `git clone https://github.com/sampson-chen/sack.git`
-    * `chmod +x sack/install_sack.sh`
-    * `sack/install_sack.sh`
-    * `rm -rf sack`
+    ``` sh
+    # 1. install ag
+    sudo apt install silversearcher-ag
+    
+    # 2. install sack
+    git clone https://github.com/sampson-chen/sack.git
+    chmod +x sack/install_sack.sh
+    sack/install_sack.sh
+    rm -rf sack
+   ```
 <br>
 
 ### DigitalOcean
