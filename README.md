@@ -199,7 +199,8 @@ sudo apt update && sudo apt install docker-ce
 sudo systemctl status docker
 
 # 7. create docker group & add your user
-sudo groupadd docker && sudo usermod -aG docker $USER
+sudo groupadd docker
+sudo usermod -aG docker $USER
 ```
 
 > Log out and login back.
