@@ -189,14 +189,26 @@ sudo apt install apt-transport-https ca-certificates software-properties-common
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add
 
 # 4. add docker respository
-sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+sudo add-apt-repository \
+    "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 
 # 5. install docker
 sudo apt update && sudo apt install docker-ce
 
 # 6. verify service status
 sudo systemctl status docker
+
+# 7. create docker group & add your user
+sudo groupadd docker && sudo usermod -aG docker $USER
 ```
+
+> Log out and login back.
+
+``` sh
+# 8. verify that you can run this command without 'sudo'
+docker run hello-world
+```
+
 <br>
 
 ### Misc
