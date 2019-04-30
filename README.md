@@ -111,8 +111,7 @@
  npm config set init.author.name <name>
  npm config set init.author.email <email>
  ```
-
-(See [additional tips](./nodejs_tips.md))
+See [additional tips](./nodejs_tips.md) for more info.
 <br>
 <br>
 
@@ -234,4 +233,5 @@ See [cheatsheet](./docker.md) for more info.
 <br>
 
 ### DigitalOcean
-[Initial Server Setup](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-18-04)
+ 1. Follow the [Initial Server Setup](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-18-04) guide.
+ 2. Append public SSH keys of each client machine into the `~/.ssh/authorized_keys` file in droplet.

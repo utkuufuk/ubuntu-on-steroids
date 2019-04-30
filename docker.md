@@ -4,10 +4,10 @@
 # list images
 docker image ls
 
-# list only running
+# list running containers
 docker container ls
 
-# list all
+# list all containers
 docker container ls -a
 ```
 
@@ -21,7 +21,7 @@ docker tag <existing_tag> <username>/<repository>:<version>
 ```
 
 #### Run Image
-*`docker run` will attempt to fetch the image from public registry if it's not found in local machine.*
+**`docker run`** *will attempt to fetch the image from public registry if it's not found in local machine.*
 ```sh
 # map the <exposed_port> in Dockerfile to <machine_port> that the app will be served
 docker run -p <exposed_port>:<machine_port> <tag>
