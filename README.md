@@ -210,6 +210,8 @@ sudo usermod -aG docker $USER
 docker run hello-world
 ```
 
+See [cheatsheet](./docker.md) for more info.
+
 <br>
 
 ### Misc
