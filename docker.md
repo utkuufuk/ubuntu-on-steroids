@@ -9,6 +9,9 @@ docker container ls
 
 # list all containers
 docker container ls -a
+
+# inspect a container
+docker inspect <container_id>
 ```
 
 #### Build Image
@@ -28,6 +31,19 @@ docker run -p <exposed_port>:<machine_port> <tag>
 
 # run image in detached mode
 docker run -d -p <exposed_port>:<machine_port> <tag>
+
+# mount the volume 'my-vol' into '/app/' in the container
+docker run -d \
+    --mount source=my-vol,target=/app \
+    -p <exposed_port>:<machine_port> \
+    <tag>
+
+# same as above, but mounts the volume as read-only
+docker run -d \
+    --mount source=my-vol,target=/app,readonly \
+    -p <exposed_port>:<machine_port> \
+    <tag>
+
 ```
 
 #### Stop Container
@@ -46,6 +62,24 @@ docker container rm <hash>
 
 # remove image from machine
 docker image rm <image_id>
+```
+
+#### Volumes
+```sh
+# create a volume named 'my-vol'
+docker volume create my-vol
+
+# list volumes
+docker volume ls
+
+# inspect the 'my-vol' volume
+docker volume inspect my-vol
+
+# remove the 'my-vol' volume
+docker volume rm my-vol
+
+# remove all unused volumes
+docker volume prune
 ```
 
 #### Public Registry
