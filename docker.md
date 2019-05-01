@@ -1,4 +1,9 @@
 ## Docker Cheatsheet
+ 1. [Docker Commands](#docker-commands)
+ 2. [Dockerfile Best Practices](#dockerfile-best-practices)
+ 3. [Docker Compose Commands](#docker-compose-commands)
+
+### Docker Commands
 #### List Images / Containers
 ```sh
 # list all images
@@ -99,6 +104,45 @@ docker logout
 docker push <username>/<repository>:<tag>
 ```
 
+### Dockerfile Best Practices
+#### Minimize the Number of Intermediate Steps
+Instead of installing packages one by one like this:
+``` dockerfile
+FROM alpine:3.4
+
+RUN apk update
+RUN apk add curl
+RUN apk add vim
+RUN apk add git
+```
+
+combine these steps like this:
+``` dockerfile
+FROM alpine:3.4
+
+RUN apk update && \
+    apk add curl && \
+    apk add vim && \
+    apk add git
+```
+
+#### Adding Packages
+It’s always advisable to put `apt-get update` and `apt-get install` commands on the same line because of [this](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#apt-get).
+
+#### `EXPOSE` Instruction
+The `EXPOSE` instruction does not actually publish the port. It functions as a type of documentation between the person who builds the image and the person who runs the container, about which ports are intended to be published. To actually publish the port when running the container, use the `-p` flag on docker run to publish and map one or more ports.
+
+#### Build Workflow
+ 1. Pick the right base image.
+ 2. Go into shell and build your environment step by step using:
+    ``` sh
+    # use /bin/sh on Alpine
+    docker run --rm -ti <tag> /bin/bash
+    ```
+ 3. Add verified steps into the Dockerfile.
+ 4. Repeat steps 2 and 3 until complete.
+
+### Docker Compose Commands
 #### Docker Compose
 ```sh
 # build images
