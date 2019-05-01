@@ -1,8 +1,11 @@
 ## Docker Cheatsheet
 #### List Images / Containers
 ```sh
-# list images
-docker image ls
+# list all images
+docker images
+
+# list all images (including intermediate)
+docker images -a
 
 # list running containers
 docker container ls
@@ -44,6 +47,8 @@ docker run -d \
     -p <exposed_port>:<machine_port> \
     <tag>
 
+# run image in interactive mode, open up a shell, and remove container on exit
+docker run --rm -ti <tag> /bin/bash
 ```
 
 #### Stop Container
