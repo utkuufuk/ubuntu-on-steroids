@@ -116,7 +116,10 @@ Lines starting with `!` can be used to make exceptions to exclusions. The follow
 #### Notes on Instructions
  * **`ARG`** - An `ARG` declared before a `FROM` is outside of a build stage, so it can’t be used in any instruction after a `FROM`.
 
- * **`RUN`** - The `<command>` in a `RUN <command>` instruction is run in a shell, which by default is `/bin/sh -c` 
+ * **`RUN`** - The `<command>` in a `RUN <command>` instruction is run in a shell, which by default is `/bin/sh -c`. You can explicitly choose a shell using the *exec* form:
+    ``` dockerfile
+    RUN ["/bin/bash", "-c", "<command>"]
+    ```
 
  * **`EXPOSE`** - The `EXPOSE` instruction does not actually publish the port. It functions as a type of documentation between the person who builds the image and the person who runs the container, about which ports are intended to be published. To actually publish the port when running the container, use the `-p` flag on docker run to publish and map one or more ports.
 
@@ -143,6 +146,10 @@ RUN apk update && \
 
 #### Adding Packages
 It’s always advisable to put `apt-get update` and `apt-get install` commands on the same line because of [this](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#apt-get).
+
+#### Upgrading Packages
+Avoid `RUN apt-get upgrade` and `dist-upgrade`, as many of the "essential" packages from the parent images cannot upgrade inside an [unprivileged container](https://docs.docker.com/engine/reference/run/#security-configuration). If a package contained in the parent image is out-of-date, contact its maintainers. If you know there is a particular package, foo, that needs to be updated, use `apt-get update && apt-get install -y foo` to update automatically.
+
 
 #### Build Workflow
  1. Pick the right base image.
