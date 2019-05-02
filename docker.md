@@ -1,6 +1,6 @@
 ## Docker Cheatsheet
  1. [Docker Commands](#docker-commands)
- 2. [Dockerfile Best Practices](#dockerfile-best-practices)
+ 2. [Dockerfile Tips](#dockerfile-tips)
  3. [Docker Compose Commands](#docker-compose-commands)
 
 ### Docker Commands
@@ -104,7 +104,22 @@ docker logout
 docker push <username>/<repository>:<tag>
 ```
 
-### Dockerfile Best Practices
+### Dockerfile Tips
+#### `.dockerignore` Exceptions
+Lines starting with `!` can be used to make exceptions to exclusions. The following is an example `.dockerignore` file that uses this mechanism:
+``` sh
+# all markdown files except `README.md` are excluded from the context.
+*.md
+!README.md
+```
+
+#### Notes on Instructions
+ * **`ARG`** - An `ARG` declared before a `FROM` is outside of a build stage, so it can’t be used in any instruction after a `FROM`.
+
+ * **`RUN`** - The `<command>` in a `RUN <command>` instruction is run in a shell, which by default is `/bin/sh -c` 
+
+ * **`EXPOSE`** - The `EXPOSE` instruction does not actually publish the port. It functions as a type of documentation between the person who builds the image and the person who runs the container, about which ports are intended to be published. To actually publish the port when running the container, use the `-p` flag on docker run to publish and map one or more ports.
+
 #### Minimize the Number of Intermediate Steps
 Instead of installing packages one by one like this:
 ``` dockerfile
@@ -128,9 +143,6 @@ RUN apk update && \
 
 #### Adding Packages
 It’s always advisable to put `apt-get update` and `apt-get install` commands on the same line because of [this](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#apt-get).
-
-#### `EXPOSE` Instruction
-The `EXPOSE` instruction does not actually publish the port. It functions as a type of documentation between the person who builds the image and the person who runs the container, about which ports are intended to be published. To actually publish the port when running the container, use the `-p` flag on docker run to publish and map one or more ports.
 
 #### Build Workflow
  1. Pick the right base image.
