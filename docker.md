@@ -2,6 +2,7 @@
  1. [Docker Commands](#docker-commands)
  2. [Dockerfile Tips](#dockerfile-tips)
  3. [Docker Compose Commands](#docker-compose-commands)
+ 4. [Docker Compose File Tips](#docker-compose-file-tips)
 
 ### Docker Commands
 #### List Images / Containers
@@ -190,4 +191,253 @@ docker-compose push
 
 # pull images into a new machine
 docker-compose pull
+```
+
+### Docker Compose File Tips
+#### `build`
+`build` can be specified either as a string containing a path to the build context:
+``` yml
+version: "3"
+services:
+  webapp:
+    # dockerfile path of the image
+    build: <context_path>
+```
+
+``` yml
+version: "3"
+services:
+  webapp:
+    build:
+      # dockerfile path of the image
+      context: <context_path>
+      # environment variables accessible only during the build process
+      args:
+        buildno: <arg1>
+        gitcommithash: <arg2>
+```
+
+#### `image`
+If the image does not exist, Compose attempts to pull it, unless you have also specified build, in which case it builds it using the specified options and tags it with the specified tag.
+``` yml
+version: "3"
+services:
+  redis:
+    # attempt to pull 'redis' if it does not exist
+    image: redis
+```
+``` yml
+version: "3"
+services:
+  webapp:
+      build: <context_path>
+      # tag the built image
+      image: <username>/<repository>:<version> 
+```
+
+#### `command`
+``` yml
+services:
+  some-service:
+    # overrides the default CMD in Dockerfile
+    command: <command> 
+```
+
+#### `container_name`
+``` yml
+services:
+  some-service:
+    # specify a custom container name, rather than a generated default name
+    container_name: <name> 
+```
+
+#### `depends_on`
+ * `docker-compose up` starts services in dependency order. In the following example, `db` and `redis` are started before web.
+
+ * `docker-compose up SERVICE` automatically includes `SERVICE`’s dependencies. In the following example, `docker-compose up web` also creates and starts `db` and `redis`
+
+``` yml
+version: "3"
+services:
+  web:
+    build: .
+    depends_on:
+      - db
+      - redis
+  redis:
+    image: redis
+  db:
+    image: postgres
+```
+
+#### `entrypoint`
+``` yml
+services:
+  some-service:
+    # overrides the default ENTRYPOINT and ignores the CMD instruction in dockerfile
+    entrypoint: <entrypoint> 
+```
+
+#### `env_file`
+Add environment variables from a file. Can be a single value or a list:
+``` yml
+services:
+  some-service:
+    env_file: <path_to_env_file>
+```
+``` yml
+services:
+  some-service:
+    env_file:
+    - <path_to_env_file_1>
+    - <path_to_env_file_2>
+    - <path_to_env_file_3>
+```
+
+Compose expects each line in an env file to be in `VAR=VAL` format. Lines beginning with `#` are treated as comments and are ignored. Blank lines are also ignored:
+``` sh
+# Set Rails/Rack environment
+RACK_ENV=development
+```
+
+#### `environment`
+Add environment variables. You can use either an array or a dictionary. Any boolean values; `true`, `false`, `yes`, `no`, need to be enclosed in quotes to ensure they are not converted to `True` or `False` by the YML parser.
+
+Environment variables with only a key are resolved to their values on the machine Compose is running on, which can be helpful for secret or host-specific values.
+``` yml
+services:
+  some-service:
+    environment:
+    RACK_ENV: development
+    SHOW: 'true'
+    SESSION_SECRET:
+```
+
+#### `expose`
+Expose ports without publishing them to the host machine - they’ll only be accessible to linked services. Only the internal port can be specified.
+``` yml
+services:
+  some-service:
+    expose:
+    - "3000"
+    - "8000"
+```
+
+#### `networks`
+Networks to join, referencing entries under the top-level `networks` key:
+``` yml
+services:
+  some-service:
+    networks:
+     - some-network
+     - other-network
+```
+
+
+#### `ports`
+Either specify both ports `(HOST:CONTAINER)`
+``` yml
+ports:
+ - "8000:8000"
+ - "49100:22"
+```
+
+#### `volumes`
+You can mount a host path as part of a definition for a single service, and there is no need to define it in the top level `volumes` key.
+But, if you want to reuse a volume across multiple services, then define a named volume in the top-level `volumes` key. 
+``` yml
+version: "3"
+services:
+  web:
+    image: nginx:alpine
+    # long syntax
+    volumes:
+      - type: volume
+        source: mydata
+        target: /data
+        volume:
+          nocopy: true
+      - type: bind
+        source: ./static
+        target: /opt/app/static
+
+  db:
+    image: postgres:latest
+    # short syntax
+    volumes:
+      - "/var/run/postgres/postgres.sock:/var/run/postgres/postgres.sock"
+      - "dbdata:/var/lib/postgresql/data"
+
+# named volumes must be listed here
+volumes:
+  mydata:
+  dbdata:
+```
+
+**Short Syntax:**
+``` yml
+volumes:
+  # Just specify a path and let the Engine create a volume
+  - /var/lib/mysql
+
+  # Specify an absolute path mapping
+  - /opt/data:/var/lib/mysql
+
+  # Path on the host, relative to the Compose file
+  - ./cache:/tmp/cache
+
+  # User-relative path
+  - ~/configs:/etc/configs/:ro
+
+  # Named volume
+  - datavolume:/var/lib/mysql
+```
+
+**Long Syntax:**
+
+The long form syntax allows the configuration of additional fields that can’t be expressed in the short form.
+
+| key       | description |
+|:----------|:------------|
+| type      | mount type `volume`, `bind` or `tmpfs` |
+| source    | source of the mount, or the name of a volume defined in the top-level `volumes` key |
+| target    | path in the container where the volume is mounted |
+| read_only | flag to set the volume as read-only |
+| volume    | configure additional volume options |
+| nocopy    | flag to disable copying of data from a container when a volume is created |
+
+Here’s an example of a two-service setup where a database’s data directory is shared with another service as a volume so that it can be periodically backed up:
+``` yml
+version: "3"
+
+services:
+  db:
+    image: db
+    volumes:
+      - data-volume:/var/lib/db
+  backup:
+    image: backup-service
+    volumes:
+      - data-volume:/var/lib/backup/data
+
+volumes:
+  data-volume:
+```
+
+#### `external`
+If set to true, specifies that this volume has been created outside of Compose. `docker-compose up` does not attempt to create it, and raises an error if it doesn’t exist.
+
+In the example below, instead of attempting to create a volume called `[projectname]_data`, Compose looks for an existing volume simply called `data` and mount it into the `db` service’s containers.
+``` yml
+version: "3"
+
+services:
+  db:
+    image: postgres
+    volumes:
+      - data:/var/lib/postgresql/data
+
+volumes:
+  data:
+    external: true
 ```
