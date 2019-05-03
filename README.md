@@ -42,6 +42,15 @@
  2. [Generate SSH Key](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)
  3. [Add SSH Key to Github Account](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)
 
+#### [Gitbatch](https://github.com/isacikgoz/gitbatch)
+``` sh
+# lines 1, 2 and 4 must be modified for newer versions
+curl -OL https://github.com/isacikgoz/gitbatch/releases/download/v0.4.2/gitbatch_0.4.1_linux_amd64.tar.gz
+tar xzf gitbatch_0.4.2_linux_amd64.tar.gz
+mv gitbatch ~/bin
+rm gitbatch_0.4.2_linux_amd64.tar.gz
+```
+
 #### [Oh My Repos](https://github.com/utkuufuk/oh-my-repos)
  1. `sudo apt install myrepos`
  2. `git clone https://github.com/utkuufuk/oh-my-repos`
