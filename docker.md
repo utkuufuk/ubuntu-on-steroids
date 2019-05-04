@@ -308,9 +308,9 @@ Environment variables with only a key are resolved to their values on the machin
 services:
   some-service:
     environment:
-    RACK_ENV: development
-    SHOW: 'true'
-    SESSION_SECRET:
+      RACK_ENV: development
+      SHOW: 'true'
+      SESSION_SECRET:
 ```
 
 #### `expose`
