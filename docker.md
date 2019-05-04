@@ -71,6 +71,9 @@ docker container kill <hash>
 # remove container from machine
 docker container rm <hash>
 
+# delete all stopped containers
+docker rm $(docker ps -a -q)
+
 # remove image from machine
 docker image rm <image_id>
 ```
