@@ -68,7 +68,7 @@ docker container stop <hash>
 docker container kill <hash>
 ```
 
-#### Remove Images / Containers
+#### Remove Images / Containers / Networks / Volumes
 ```sh
 # remove container from machine
 docker container rm <hash>
@@ -78,6 +78,12 @@ docker rm $(docker ps -a -q)
 
 # remove image from machine
 docker image rm <image_id>
+
+# remove all stopped containers, all dangling images and all unused networks
+docker system prune
+
+# same as above, plus remove all unused volumes
+docker system prune --volumes
 ```
 
 #### Volumes
