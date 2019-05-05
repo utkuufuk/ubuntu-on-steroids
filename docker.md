@@ -15,9 +15,11 @@ docker images -a
 
 # list running containers
 docker container ls
+docker ps
 
 # list all containers
 docker container ls -a
+docker ps -a
 
 # inspect a container
 docker inspect <container_id>
