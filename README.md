@@ -8,9 +8,10 @@
  6. [Node.js](#nodejs)
  7. [Terminal & Shell](#terminal--shell)
  8. [Visual Studio Code](#visual-studio-code)
- 9. [Docker](#docker)
- 10. [Misc](#misc)
- 11. [DigitalOcean](#digitalocean)
+ 9. [Other Tools](#other-tools)
+ 10. [Docker](#docker)
+ 11. [MySQL Server](#mysql-server)
+ 12. [DigitalOcean](#digitalocean)
 
 ### Core Dependencies
  * `sudo apt install python-dev`
@@ -185,6 +186,25 @@ See [additional tips](./nodejs_tips.md) for more info.
  5. `npm install -g eslint`
 <br>
 
+### Other Tools
+ * [Peek](https://github.com/phw/peek)
+    ```sh
+    sudo add-apt-repository ppa:peek-developers/stable
+    sudo apt update && sudo apt install peek
+    ```
+ * [ag](https://github.com/ggreer/the_silver_searcher) & [sack](https://github.com/sampson-chen/sack)
+    ``` sh
+    # 1. install ag
+    sudo apt install silversearcher-ag
+    
+    # 2. install sack
+    git clone https://github.com/sampson-chen/sack.git
+    chmod +x sack/install_sack.sh
+    sack/install_sack.sh
+    rm -rf sack
+   ```
+<br>
+
 ### Docker
 ``` sh
 # 1. remove any older versions
@@ -228,23 +248,47 @@ See [cheatsheet](./docker.md) for more info.
 
 <br>
 
-### Misc
- * [Peek](https://github.com/phw/peek)
-    ```sh
-    sudo add-apt-repository ppa:peek-developers/stable
-    sudo apt update && sudo apt install peek
-    ```
- * [ag](https://github.com/ggreer/the_silver_searcher) & [sack](https://github.com/sampson-chen/sack)
+### MySQL Server
+#### Downloading a MySQL Server Docker Image
+```sh
+docker pull mysql/mysql-server:<tag>
+```
+
+#### Starting a MySQL Server Instance
+``` sh
+# start server
+docker run --name=<container_name> -d mysql/mysql-server:<tag>
+
+# check status
+docker ps
+
+# monitor logs
+docker logs <container_name>
+
+```
+
+#### Connecting to MySQL Server from within the Container
+ 1. **Run the MySQL Client**
     ``` sh
-    # 1. install ag
-    sudo apt install silversearcher-ag
-    
-    # 2. install sack
-    git clone https://github.com/sampson-chen/sack.git
-    chmod +x sack/install_sack.sh
-    sack/install_sack.sh
-    rm -rf sack
-   ```
+    # check randomly generated password
+    docker logs <container_name> 2>&1 | grep GENERATED
+
+    # run the MySQL client within the MySQL Server container
+    docker exec -it <container_name> mysql -uroot -p
+    ```
+    When prompted, paste the generated password obtained from the previous step.
+
+ 2. **Reset Root Password**
+    ``` sh
+    ALTER USER 'root'@'localhost' IDENTIFIED BY '<new_password>';
+    ```
+
+#### Container Shell Access
+```sh
+docker exec -it <container_name> bash
+```
+
+See [cheatsheet](https://gist.github.com/bradtraversy/c831baaad44343cc945e76c2e30927b3) for more info.
 <br>
 
 ### DigitalOcean
