@@ -1,7 +1,7 @@
 # Ubuntu on Steroids
 ### Table of Contents
  1. [Core Dependencies](#core-dependencies)
- 2. [Basic Tools & Drivers](#basic-tools--drivers)
+ 2. [Common Tools & Drivers](#basic-tools--drivers)
  3. [Git & Github](#git--github)
  4. [Theme](#theme)
  5. [Neovim](#neovim)
@@ -25,17 +25,33 @@
  * `sudo apt install python3-tk`
 <br>
 
-### Basic Tools & Drivers
+### Common Tools & Drivers
+#### Nvidia Driver
+> *Software & Updates > Additional Drivers*
+
 #### KeePass 
-> `sudo apt install keepass2`
+``` sh
+sudo apt install keepass2
+```
+
+#### OBS
+``` sh
+sudo add-apt-repository ppa:obsproject/obs-studio
+sudo apt install obs-studio
+```
+
+#### Skype
+``` sh
+wget https://go.skype.com/skypeforlinux-64.deb
+sudo apt install ./skypeforlinux-64.deb
+rm skypeforlinux-64.deb
+```
 
 #### Ubuntu Software
  * Dropbox 
  * Spotify
  * GIMP
 
-#### Nvidia Driver
-> *Software & Updates > Additional Drivers*
 <br>
 
 ### Git & Github
@@ -58,6 +74,7 @@ rm gitbatch_0.4.2_linux_amd64.tar.gz
  2. `git clone https://github.com/utkuufuk/oh-my-repos`
  3. `pip3 install oh-my-repos/.`
  4. `rm -rf oh-my-repos`
+
 <br>
 
 ### Theme
