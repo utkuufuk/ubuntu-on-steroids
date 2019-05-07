@@ -20,6 +20,7 @@
  * `sudo apt install curl`
  * `sudo apt install cmake`
  * `sudo apt install default-jdk`
+ * `sudo apt install maven`
  * `sudo apt install python3-pip`
  * `sudo apt install python3-tk`
 <br>
