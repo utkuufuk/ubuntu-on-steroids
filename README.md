@@ -1,7 +1,7 @@
 # Ubuntu on Steroids
 ### Table of Contents
  1. [Core Dependencies](#core-dependencies)
- 2. [Common Tools & Drivers](#basic-tools--drivers)
+ 2. [Common Tools & Drivers](#common-tools--drivers)
  3. [Git & Github](#git--github)
  4. [Theme](#theme)
  5. [Neovim](#neovim)
