@@ -452,3 +452,13 @@ volumes:
   data:
     external: true
 ```
+
+
+#### `network_mode`
+``` yml
+services:
+  some-service::
+    # network_mode: host -> do not use isolated network
+    network_mode: <mode>
+```
+
