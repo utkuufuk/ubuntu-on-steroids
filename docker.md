@@ -104,16 +104,28 @@ docker volume rm my-vol
 docker volume prune
 ```
 
-#### Public Registry
+#### Remote Registry
 ```sh
 # login to public registry
 docker login
 
-# logout from public registry
-docker logout
+# logout from public registry 
+docker logout 
 
-# upload image to public registry
+# login to private registry
+docker login <hostname>:<port>
+
+# logout from private registry
+docker logout <hostname>:<port> 
+
+# upload image to registry
 docker push <username>/<repository>:<tag>
+
+# list all images in registry
+curl -X <hostname>:<port>/v2/_catalog
+
+# list all tags for an image in registry
+curl -X <hostname>:<port>/v2/<image_name>/tags/list
 ```
 
 ### Dockerfile Tips
