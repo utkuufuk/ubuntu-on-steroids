@@ -122,10 +122,10 @@ docker logout <hostname>:<port>
 docker push <username>/<repository>:<tag>
 
 # list all images in registry
-curl -X <hostname>:<port>/v2/_catalog
+curl <hostname>:<port>/v2/_catalog
 
 # list all tags for an image in registry
-curl -X <hostname>:<port>/v2/<image_name>/tags/list
+curl <hostname>:<port>/v2/<image_name>/tags/list
 ```
 
 ### Dockerfile Tips
