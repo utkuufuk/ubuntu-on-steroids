@@ -1,4 +1,44 @@
 {
+    // WINDOW
+    "window.titleBarStyle": "custom",
+
+    // WORKBENCH
+    "workbench.colorTheme": "Dracula",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.settings.editor": "json",
+    "workbench.startupEditor": "newUntitledFile",
+
+    // TERMINAL
+    "terminal.integrated.fontSize": 14,
+
+    // EDITOR
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.detectIndentation": false,
+    "editor.fontFamily": "'Courier Prime Code', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontSize": 16,
+    "editor.minimap.enabled": false,
+    "editor.rulers": [100],
+    "editor.wordWrapColumn": 100,
+
+    // EDITOR > FORMATTER
+    "editor.formatOnSave": false,
+    "[javascript]": {
+        "editor.formatOnSave": true
+    },
+    "[javascriptreact]": {
+        "editor.formatOnSave": true
+    },
+    "[css]": {
+        "editor.formatOnSave": true
+    },
+
+    // PRETTIER
+    "prettier.bracketSpacing": false,
+    "prettier.eslintIntegration": true,
+    "prettier.printWidth": 100,
+    "prettier.tabWidth": 4,
+
+    // VIM
     "vim.easymotion": true,
     "vim.sneak": true,
     "vim.incsearch": true,
@@ -37,23 +77,5 @@
     "vim.handleKeys": {
         "<C-a>": false,
         "<C-f>": false
-    },
-    "editor.wordWrapColumn": 100,
-    "editor.rulers": [100],
-    "workbench.startupEditor": "newUntitledFile",
-    "workbench.colorTheme": "Dracula",
-    "window.titleBarStyle": "custom",
-    "editor.detectIndentation": false,
-    "editor.minimap.maxColumn": 100,
-    "editor.fontFamily": "'Input', 'monospace', monospace, 'Droid Sans Fallback'",
-    "prettier.tabWidth": 4,
-    "prettier.bracketSpacing": false,
-    "prettier.eslintIntegration": true,
-    "prettier.printWidth": 100,
-    "editor.minimap.enabled": false,
-    "editor.formatOnSave": true,
-    "[html]": {
-        "editor.formatOnSave": false
     }
 }
-
