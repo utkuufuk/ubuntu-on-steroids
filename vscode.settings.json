@@ -3,19 +3,29 @@
     "window.titleBarStyle": "custom",
 
     // WORKBENCH
-    "workbench.colorTheme": "Dracula",
+    "workbench.colorTheme":"Monokai",
+    "workbench.colorCustomizations": {
+        "[Monokai]": {
+            "tab.activeBackground": "#0059ffa4",
+            "tab.activeBorder": "#fffb0050"
+        }
+    },
+    "workbench.editor.closeEmptyGroups": false,
     "workbench.iconTheme": "material-icon-theme",
     "workbench.settings.editor": "json",
     "workbench.startupEditor": "newUntitledFile",
+    "workbench.statusBar.feedback.visible": false,
 
     // TERMINAL
+    "terminal.integrated.fontFamily": "'Hack', 'monospace', monospace, 'Droid Sans Fallback'",
     "terminal.integrated.fontSize": 14,
 
     // EDITOR
+    "editor.copyWithSyntaxHighlighting": false,
     "editor.cursorSmoothCaretAnimation": true,
     "editor.detectIndentation": false,
     "editor.fontFamily": "'Courier Prime Code', 'monospace', monospace, 'Droid Sans Fallback'",
-    "editor.fontSize": 16,
+    "editor.fontSize": 14,
     "editor.minimap.enabled": false,
     "editor.rulers": [100],
     "editor.wordWrapColumn": 100,

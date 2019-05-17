@@ -206,6 +206,12 @@ See [additional tips](./nodejs_tips.md) for more info.
  3. Copy the [settings file](vscode.settings.json) contents into `settings.json`
  4. `Ctrl+Shift+P > Python: Select Interpreter > Python 3.X`
  5. `npm install -g eslint`
+
+#### Shortcuts
+| Shortcut | Description |
+| -------- | ----------- |
+| `Ctrl+B` | Toggle sidebar |
+| `Ctrl+,` | Open settings |
 <br>
 
 ### Other Tools
