@@ -1,13 +1,18 @@
 {
+    // INTELLICODE
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+
     // WINDOW
     "window.titleBarStyle": "custom",
 
     // WORKBENCH
-    "workbench.colorTheme":"Monokai",
+    "workbench.colorTheme":"Winter is Coming (Dark Blue - No Italics)",
     "workbench.colorCustomizations": {
-        "[Monokai]": {
-            "tab.activeBackground": "#0059ffa4",
-            "tab.activeBorder": "#fffb0050"
+        "[Winter is Coming (Dark Blue - No Italics)]": {
+            "tab.activeBackground": "#0059cca4",
+            "tab.activeBorder": "#fffb0050",
+            "editor.lineHighlightBackground": "#234",
+            "editor.lineHighlightBorder": "#123"
         }
     },
     "workbench.editor.closeEmptyGroups": false,
@@ -28,6 +33,7 @@
     "editor.fontSize": 14,
     "editor.minimap.enabled": false,
     "editor.rulers": [100],
+    "editor.suggestSelection": "first",
     "editor.wordWrapColumn": 100,
 
     // EDITOR > FORMATTER

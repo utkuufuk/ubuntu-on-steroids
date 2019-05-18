@@ -79,9 +79,9 @@ rm gitbatch_0.4.2_linux_amd64.tar.gz
 
 ### Theme
 #### Fonts
- 1. [Input](http://input.fontbureau.com/download/index.html?size=15&language=python&theme=monokai&family=InputMono&width=300&weight=400&line-height=1.3&a=ss&g=ss&i=serifs_round&l=serifs_round&zero=slash&asterisk=height&braces=0&preset=default&customize=please)
- 2. [Hack](https://github.com/source-foundry/Hack/releases/download/v3.003/Hack-v3.003-ttf.zip)
- 3. [Courier Prime Code](https://www.fontsquirrel.com/fonts/courier-prime-code)
+ 1. [Hack](https://github.com/source-foundry/Hack/releases/download/v3.003/Hack-v3.003-ttf.zip)
+ 2. [Courier Prime Code](https://www.fontsquirrel.com/fonts/courier-prime-code)
+ 3. [Input](http://input.fontbureau.com/download/index.html?size=15&language=python&theme=monokai&family=InputMono&width=300&weight=400&line-height=1.3&a=ss&g=ss&i=serifs_round&l=serifs_round&zero=slash&asterisk=height&braces=0&preset=default&customize=please)
  4. Source Code Pro
     ``` sh
     # download & install Source Code Pro
@@ -196,7 +196,7 @@ See [additional tips](./nodejs_tips.md) for more info.
     * Python
     * ESLint
     * Prettier
-    * Dracula Ofiicial
+    * Winter Is Coming
     * Live Server
     * ES7 React/Redux/GraphQL/React-Native snippets
     * REST Client
