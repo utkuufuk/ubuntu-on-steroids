@@ -51,7 +51,9 @@
     // PRETTIER
     "prettier.bracketSpacing": false,
     "prettier.eslintIntegration": true,
+    "prettier.jsxBracketSameLine": true,
     "prettier.printWidth": 100,
+    "prettier.singleQuote": true,
     "prettier.tabWidth": 4,
 
     // VIM
