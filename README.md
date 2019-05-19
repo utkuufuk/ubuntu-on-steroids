@@ -196,7 +196,7 @@ See [additional tips](./nodejs_tips.md) for more info.
     * Python
     * ESLint
     * Prettier
-    * Winter Is Coming
+    * Dracula *or* Winter Is Coming
     * Live Server
     * ES7 React/Redux/GraphQL/React-Native snippets
     * REST Client

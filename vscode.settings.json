@@ -6,13 +6,20 @@
     "window.titleBarStyle": "custom",
 
     // WORKBENCH
-    "workbench.colorTheme":"Winter is Coming (Dark Blue - No Italics)",
+    "workbench.colorTheme":"Dracula",
     "workbench.colorCustomizations": {
         "[Winter is Coming (Dark Blue - No Italics)]": {
-            "tab.activeBackground": "#0059cca4",
-            "tab.activeBorder": "#fffb0050",
             "editor.lineHighlightBackground": "#234",
             "editor.lineHighlightBorder": "#123"
+        },
+        "[Dracula]": {
+            "tab.activeBackground": "#40598874",
+            "editor.lineHighlightBackground": "#334"
+        },
+        "[Monokai]": {
+            "tab.activeBackground": "#22882274",
+            "tab.activeBorder": "#7e8822",
+            "editor.lineHighlightBorder": "#333"
         }
     },
     "workbench.editor.closeEmptyGroups": false,
