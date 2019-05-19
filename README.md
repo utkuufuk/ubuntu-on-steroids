@@ -10,7 +10,7 @@
  8. [Visual Studio Code](#visual-studio-code)
  9. [Other Tools](#other-tools)
  10. [Docker](#docker)
- 11. [MySQL Server](#mysql-server)
+ 11. [MySQL](#mysql)
  12. [DigitalOcean](#digitalocean)
 
 ### Core Dependencies
@@ -276,26 +276,19 @@ See [cheatsheet](./docker.md) for more info.
 
 <br>
 
-### MySQL Server
-#### Downloading a MySQL Server Docker Image
+### MySQL
+#### Download MySQL Docker Image
 ```sh
 docker pull mysql/mysql-server:<tag>
 ```
 
-#### Starting a MySQL Server Instance
+#### Start MySQL Container
 ``` sh
 # start server
 docker run --name=<container_name> -d mysql/mysql-server:<tag>
-
-# check status
-docker ps
-
-# monitor logs
-docker logs <container_name>
-
 ```
 
-#### Connecting to MySQL Server from within the Container
+#### Connect to MySQL Server from within the Container
  1. **Run the MySQL Client**
     ``` sh
     # check randomly generated password
@@ -311,9 +304,24 @@ docker logs <container_name>
     ALTER USER 'root'@'localhost' IDENTIFIED BY '<new_password>';
     ```
 
-#### Container Shell Access
-```sh
-docker exec -it <container_name> bash
+#### Backup & Restore
+Backup & restore a particular database while MySQL container is running:
+``` sh
+# backup
+docker exec <mysql_container_name> mysqldump \
+    -u <username> --password=<password> <database_name> > <backup_file>.sql
+
+# restore
+cat <backup_file>.sql | docker exec -i <mysql_container_name> mysql \
+    -u <username> --password=<password> <database_name>
+
+# backup & compress
+docker exec <mysql_container_name> mysqldump \
+    -u <username> --password=<password> <database_name> | gzip -c > <backup_file>.sql.gz 
+
+# decompress & restore
+gzip -d -c <backup_file>.sql.gz | docker exec -i <mysql_container_name> mysql \
+    -u <username> --password=<password> <database_name>
 ```
 
 See [cheatsheet](https://gist.github.com/bradtraversy/c831baaad44343cc945e76c2e30927b3) for more info.
