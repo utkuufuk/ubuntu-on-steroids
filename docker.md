@@ -23,6 +23,12 @@ docker ps -a
 
 # inspect a container
 docker inspect <container_id>
+
+# get container IP address
+docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <container_id>
+
+# access sh/bash on running container
+docker exec -it <container_id> /bin/sh
 ```
 
 #### Build Image
@@ -46,14 +52,12 @@ docker run -d -p <exposed_port>:<machine_port> <tag>
 # mount the volume 'my-vol' into '/app/' in the container
 docker run -d \
     --mount source=my-vol,target=/app \
-    -p <exposed_port>:<machine_port> \
-    <tag>
+    -p <exposed_port>:<machine_port> <tag>
 
 # same as above, but mounts the volume as read-only
 docker run -d \
     --mount source=my-vol,target=/app,readonly \
-    -p <exposed_port>:<machine_port> \
-    <tag>
+    -p <exposed_port>:<machine_port> <tag>
 
 # run image in interactive mode, open up a shell, and remove container on exit
 docker run --rm -ti <tag> /bin/bash

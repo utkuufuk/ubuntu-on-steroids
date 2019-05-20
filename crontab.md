@@ -18,6 +18,9 @@ crontab -e -u <username>
 
 # delete <username>'s crontab
 crontab -r -u <username>
+
+# populate crontab from file contents
+crontab -l -u <username> | cat - <filename> | crontab -u <username> -
 ```
 
 ### Crontab Syntax

@@ -10,7 +10,7 @@
  8. [Visual Studio Code](#visual-studio-code)
  9. [Other Tools](#other-tools)
  10. [Docker](#docker)
- 11. [MySQL Server](#mysql-server)
+ 11. [MySQL](#mysql)
  12. [DigitalOcean](#digitalocean)
 
 ### Core Dependencies
@@ -79,9 +79,9 @@ rm gitbatch_0.4.2_linux_amd64.tar.gz
 
 ### Theme
 #### Fonts
- 1. [Input](http://input.fontbureau.com/download/index.html?size=15&language=python&theme=monokai&family=InputMono&width=300&weight=400&line-height=1.3&a=ss&g=ss&i=serifs_round&l=serifs_round&zero=slash&asterisk=height&braces=0&preset=default&customize=please)
- 2. [Hack](https://github.com/source-foundry/Hack/releases/download/v3.003/Hack-v3.003-ttf.zip)
- 3. [Courier Prime Code](https://www.fontsquirrel.com/fonts/courier-prime-code)
+ 1. [Hack](https://github.com/source-foundry/Hack/releases/download/v3.003/Hack-v3.003-ttf.zip)
+ 2. [Courier Prime Code](https://www.fontsquirrel.com/fonts/courier-prime-code)
+ 3. [Input](http://input.fontbureau.com/download/index.html?size=15&language=python&theme=monokai&family=InputMono&width=300&weight=400&line-height=1.3&a=ss&g=ss&i=serifs_round&l=serifs_round&zero=slash&asterisk=height&braces=0&preset=default&customize=please)
  4. Source Code Pro
     ``` sh
     # download & install Source Code Pro
@@ -196,7 +196,7 @@ See [additional tips](./nodejs_tips.md) for more info.
     * Python
     * ESLint
     * Prettier
-    * Dracula Ofiicial
+    * Dracula *or* Winter Is Coming
     * Live Server
     * ES7 React/Redux/GraphQL/React-Native snippets
     * REST Client
@@ -206,6 +206,12 @@ See [additional tips](./nodejs_tips.md) for more info.
  3. Copy the [settings file](vscode.settings.json) contents into `settings.json`
  4. `Ctrl+Shift+P > Python: Select Interpreter > Python 3.X`
  5. `npm install -g eslint`
+
+#### Shortcuts
+| Shortcut | Description |
+| -------- | ----------- |
+| `Ctrl+B` | Toggle sidebar |
+| `Ctrl+,` | Open settings |
 <br>
 
 ### Other Tools
@@ -270,26 +276,19 @@ See [cheatsheet](./docker.md) for more info.
 
 <br>
 
-### MySQL Server
-#### Downloading a MySQL Server Docker Image
+### MySQL
+#### Download MySQL Docker Image
 ```sh
 docker pull mysql/mysql-server:<tag>
 ```
 
-#### Starting a MySQL Server Instance
+#### Start MySQL Container
 ``` sh
 # start server
 docker run --name=<container_name> -d mysql/mysql-server:<tag>
-
-# check status
-docker ps
-
-# monitor logs
-docker logs <container_name>
-
 ```
 
-#### Connecting to MySQL Server from within the Container
+#### Connect to MySQL Server from within the Container
  1. **Run the MySQL Client**
     ``` sh
     # check randomly generated password
@@ -305,9 +304,24 @@ docker logs <container_name>
     ALTER USER 'root'@'localhost' IDENTIFIED BY '<new_password>';
     ```
 
-#### Container Shell Access
-```sh
-docker exec -it <container_name> bash
+#### Backup & Restore
+Backup & restore a particular database while MySQL container is running:
+``` sh
+# backup
+docker exec <mysql_container_name> mysqldump \
+    -u <username> --password=<password> <database_name> > <backup_file>.sql
+
+# restore
+cat <backup_file>.sql | docker exec -i <mysql_container_name> mysql \
+    -u <username> --password=<password> <database_name>
+
+# backup & compress
+docker exec <mysql_container_name> mysqldump \
+    -u <username> --password=<password> <database_name> | gzip -c > <backup_file>.sql.gz 
+
+# decompress & restore
+gzip -d -c <backup_file>.sql.gz | docker exec -i <mysql_container_name> mysql \
+    -u <username> --password=<password> <database_name>
 ```
 
 See [cheatsheet](https://gist.github.com/bradtraversy/c831baaad44343cc945e76c2e30927b3) for more info.

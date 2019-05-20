@@ -1,4 +1,70 @@
 {
+    // INTELLICODE
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+
+    // WINDOW
+    "window.titleBarStyle": "custom",
+
+    // WORKBENCH
+    "workbench.colorTheme":"Dracula",
+    "workbench.colorCustomizations": {
+        "[Winter is Coming (Dark Blue - No Italics)]": {
+            "editor.lineHighlightBackground": "#234",
+            "editor.lineHighlightBorder": "#123"
+        },
+        "[Dracula]": {
+            "tab.activeBackground": "#40598874",
+            "tab.inactiveForeground": "#aaa",
+            "editor.lineHighlightBackground": "#334"
+        },
+        "[Monokai]": {
+            "tab.activeBackground": "#22882274",
+            "tab.activeBorder": "#7e8822",
+            "editor.lineHighlightBorder": "#333"
+        }
+    },
+    "workbench.editor.closeEmptyGroups": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.settings.editor": "json",
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.statusBar.feedback.visible": false,
+
+    // TERMINAL
+    "terminal.integrated.fontFamily": "'Hack', 'monospace', monospace, 'Droid Sans Fallback'",
+    "terminal.integrated.fontSize": 14,
+
+    // EDITOR
+    "editor.copyWithSyntaxHighlighting": false,
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.detectIndentation": false,
+    "editor.fontFamily": "'Courier Prime Code', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontSize": 14,
+    "editor.minimap.enabled": false,
+    "editor.rulers": [100],
+    "editor.suggestSelection": "first",
+    "editor.wordWrapColumn": 100,
+
+    // EDITOR > FORMATTER
+    "editor.formatOnSave": false,
+    "[javascript]": {
+        "editor.formatOnSave": true
+    },
+    "[javascriptreact]": {
+        "editor.formatOnSave": true
+    },
+    "[css]": {
+        "editor.formatOnSave": true
+    },
+
+    // PRETTIER
+    "prettier.bracketSpacing": false,
+    "prettier.eslintIntegration": true,
+    "prettier.jsxBracketSameLine": true,
+    "prettier.printWidth": 100,
+    "prettier.singleQuote": true,
+    "prettier.tabWidth": 4,
+
+    // VIM
     "vim.easymotion": true,
     "vim.sneak": true,
     "vim.incsearch": true,
@@ -37,23 +103,5 @@
     "vim.handleKeys": {
         "<C-a>": false,
         "<C-f>": false
-    },
-    "editor.wordWrapColumn": 100,
-    "editor.rulers": [100],
-    "workbench.startupEditor": "newUntitledFile",
-    "workbench.colorTheme": "Dracula",
-    "window.titleBarStyle": "custom",
-    "editor.detectIndentation": false,
-    "editor.minimap.maxColumn": 100,
-    "editor.fontFamily": "'Input', 'monospace', monospace, 'Droid Sans Fallback'",
-    "prettier.tabWidth": 4,
-    "prettier.bracketSpacing": false,
-    "prettier.eslintIntegration": true,
-    "prettier.printWidth": 100,
-    "editor.minimap.enabled": false,
-    "editor.formatOnSave": true,
-    "[html]": {
-        "editor.formatOnSave": false
     }
 }
-
