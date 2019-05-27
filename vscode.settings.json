@@ -46,6 +46,9 @@
 
     // EDITOR > FORMATTER
     "editor.formatOnSave": false,
+    "[typescript]": {
+        "editor.formatOnSave": true
+    },
     "[javascript]": {
         "editor.formatOnSave": true
     },
@@ -55,14 +58,20 @@
     "[css]": {
         "editor.formatOnSave": true
     },
+    "[json]": {
+        "editor.formatOnSave": true
+    },
 
     // PRETTIER
+    "prettier.arrowParens": "always",
     "prettier.bracketSpacing": false,
     "prettier.eslintIntegration": true,
     "prettier.jsxBracketSameLine": true,
+    "prettier.jsxSingleQuote": true,
     "prettier.printWidth": 100,
     "prettier.singleQuote": true,
     "prettier.tabWidth": 4,
+    "prettier.tslintIntegration": true,
 
     // VIM
     "vim.easymotion": true,
