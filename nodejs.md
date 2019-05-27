@@ -40,9 +40,9 @@
     ...
 
     ```
-Use the following command to watch a file and automaticall compile on changes:
+Use the following command to automatically re-compile on file changes:
 ``` sh
-tsc <filename>.ts -w
+tsc -p . -w
 ```
 
 ### ESLint Integration
