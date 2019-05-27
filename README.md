@@ -143,7 +143,7 @@ rm gitbatch_0.4.2_linux_amd64.tar.gz
  npm config set init.author.name <name>
  npm config set init.author.email <email>
  ```
-See [additional tips](./nodejs_tips.md) for more info.
+See [additional tips](./nodejs.md) for more info.
 <br>
 <br>
 
