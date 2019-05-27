@@ -40,6 +40,10 @@
     ...
 
     ```
+Use the following command to watch a file and automaticall compile on changes:
+``` sh
+tsc <filename>.ts -w
+```
 
 ### ESLint Integration
  * `eslint --init` &mdash; create local ESLint configuration
