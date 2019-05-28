@@ -12,6 +12,7 @@
  10. [Docker](#docker)
  11. [MySQL](#mysql)
  12. [DigitalOcean](#digitalocean)
+ 13. [Useful Commands](#useful-commands)
 
 ### Core Dependencies
  * `sudo apt install python-dev`
@@ -330,3 +331,9 @@ See [cheatsheet](https://gist.github.com/bradtraversy/c831baaad44343cc945e76c2e3
 ### DigitalOcean
  1. Follow the [Initial Server Setup](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-18-04) guide.
  2. Append public SSH keys of each client machine into the `~/.ssh/authorized_keys` file in droplet.
+
+### Useful Commands
+``` sh
+# list which processes listen on which TCP ports
+netstat -tlnp
+```
