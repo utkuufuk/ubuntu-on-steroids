@@ -36,31 +36,13 @@
     // EDITOR
     "editor.copyWithSyntaxHighlighting": false,
     "editor.cursorSmoothCaretAnimation": true,
-    "editor.detectIndentation": false,
     "editor.fontFamily": "'Courier Prime Code', 'monospace', monospace, 'Droid Sans Fallback'",
     "editor.fontSize": 14,
+    "editor.formatOnSave": true,
     "editor.minimap.enabled": false,
     "editor.rulers": [100],
     "editor.suggestSelection": "first",
     "editor.wordWrapColumn": 100,
-
-    // EDITOR > FORMATTER
-    "editor.formatOnSave": false,
-    "[typescript]": {
-        "editor.formatOnSave": true
-    },
-    "[javascript]": {
-        "editor.formatOnSave": true
-    },
-    "[javascriptreact]": {
-        "editor.formatOnSave": true
-    },
-    "[css]": {
-        "editor.formatOnSave": true
-    },
-    "[json]": {
-        "editor.formatOnSave": true
-    },
 
     // PRETTIER
     "prettier.arrowParens": "always",
