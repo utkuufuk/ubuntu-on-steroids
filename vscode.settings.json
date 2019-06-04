@@ -6,7 +6,7 @@
     "window.titleBarStyle": "custom",
 
     // WORKBENCH
-    "workbench.colorTheme":"Dracula",
+    "workbench.colorTheme": "Dracula",
     "workbench.colorCustomizations": {
         "[Winter is Coming (Dark Blue - No Italics)]": {
             "editor.lineHighlightBackground": "#234",
@@ -31,18 +31,24 @@
 
     // TERMINAL
     "terminal.integrated.fontFamily": "'Hack', 'monospace', monospace, 'Droid Sans Fallback'",
-    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.fontSize": 16,
 
     // EDITOR
     "editor.copyWithSyntaxHighlighting": false,
     "editor.cursorSmoothCaretAnimation": true,
     "editor.fontFamily": "'Courier Prime Code', 'monospace', monospace, 'Droid Sans Fallback'",
-    "editor.fontSize": 14,
+    "editor.fontSize": 16,
     "editor.formatOnSave": true,
     "editor.minimap.enabled": false,
     "editor.rulers": [100],
     "editor.suggestSelection": "first",
     "editor.wordWrapColumn": 100,
+    "[yaml]": {
+        "editor.formatOnSave": false
+    },
+    "[markdown]": {
+        "editor.formatOnSave": false
+    },
 
     // PRETTIER
     "prettier.arrowParens": "always",
@@ -96,3 +102,4 @@
         "<C-f>": false
     }
 }
+
