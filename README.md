@@ -227,9 +227,11 @@ See [additional tips](./nodejs.md) for more info.
     sudo apt install silversearcher-ag
     
     # 2. install sack
-    git clone https://github.com/sampson-chen/sack.git
-    chmod +x sack/install_sack.sh
-    sack/install_sack.sh
+    git clone https://github.com/sampson-chen/sack.git && \ 
+    cd sack && \ 
+    chmod +x install_sack.sh && \
+    ./install_sack.sh && \
+    cd .. && \
     rm -rf sack
    ```
 <br>
