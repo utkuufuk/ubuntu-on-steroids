@@ -33,6 +33,12 @@
     "terminal.integrated.fontFamily": "'Hack', 'monospace', monospace, 'Droid Sans Fallback'",
     "terminal.integrated.fontSize": 16,
 
+    // BREADCRUMBS
+    "breadcrumbs.enabled": false,
+
+    // EXPLORER
+    "explorer.sortOrder": "filesFirst",
+
     // EDITOR
     "editor.copyWithSyntaxHighlighting": false,
     "editor.cursorSmoothCaretAnimation": true,
@@ -102,4 +108,3 @@
         "<C-f>": false
     }
 }
-
