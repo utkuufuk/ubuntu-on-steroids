@@ -55,6 +55,9 @@
     "[markdown]": {
         "editor.formatOnSave": false
     },
+    "[jsonc]": {
+        "editor.formatOnSave": false
+    },
 
     // PRETTIER
     "prettier.arrowParens": "always",
@@ -106,5 +109,6 @@
     "vim.handleKeys": {
         "<C-a>": false,
         "<C-f>": false
-    }
+    },
 }
+
