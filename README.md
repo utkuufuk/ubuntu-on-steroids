@@ -5,14 +5,15 @@
  3. [Git & Github](#git--github)
  4. [Theme](#theme)
  5. [Neovim](#neovim)
- 6. [Node.js](#nodejs)
- 7. [Terminal & Shell](#terminal--shell)
- 8. [Visual Studio Code](#visual-studio-code)
- 9. [Other Tools](#other-tools)
- 10. [Docker](#docker)
- 11. [MySQL](#mysql)
- 12. [DigitalOcean](#digitalocean)
- 13. [Useful Commands](#useful-commands)
+ 6. [Terminal & Shell](#terminal--shell)
+ 7. [Node.js](#nodejs)
+ 8. [PHP](#php)
+ 9. [Visual Studio Code](#visual-studio-code)
+ 10. [Other Tools](#other-tools)
+ 11. [Docker](#docker)
+ 12. [MySQL](#mysql)
+ 13. [DigitalOcean](#digitalocean)
+ 14. [Useful Commands](#useful-commands)
 
 ### Core Dependencies
  * `sudo apt install python-dev`
@@ -126,28 +127,6 @@ rm gitbatch_0.4.2_linux_amd64.tar.gz
         * `:PlugInstall`
 <br>
 
-### Node.js
-#### Install Node.js
- ```sh
- # install nodejs 11
- curl -sL https://deb.nodesource.com/setup_11.x | sudo -E bash -
- sudo apt install -y nodejs
- ```
-
-#### Change the Location of Global Packages
- 1. `cd ~ && mkdir .node_modules_global`
- 2. `npm config set prefix=$HOME/.node_modules_global`
- 3. `npm install npm@latest -g`
-
-#### Configure Defaults
- ```sh
- npm config set init.author.name <name>
- npm config set init.author.email <email>
- ```
-See [additional tips](./nodejs.md) for more info.
-<br>
-<br>
-
 ### Terminal & Shell
 #### [Tilix](https://github.com/gnunn1/tilix)
  1. Install Tilix
@@ -189,6 +168,46 @@ See [additional tips](./nodejs.md) for more info.
     * `curl -o ~/.zshrc https://raw.githubusercontent.com/utkuufuk/ubuntu-on-steroids/master/.zshrc`
     * `source ~/.zshrc`
 <br>
+
+### Node.js
+#### Install Node.js
+ ```sh
+ # install nodejs 11
+ curl -sL https://deb.nodesource.com/setup_11.x | sudo -E bash -
+ sudo apt install -y nodejs
+ ```
+
+#### Change the Location of Global Packages
+ 1. `cd ~ && mkdir .node_modules_global`
+ 2. `npm config set prefix=$HOME/.node_modules_global`
+ 3. `npm install npm@latest -g`
+
+#### Configure Defaults
+ ```sh
+ npm config set init.author.name <name>
+ npm config set init.author.email <email>
+ ```
+See [additional tips](./nodejs.md) for more info.
+<br>
+<br>
+
+### PHP
+#### Install PHP
+ ```sh
+ sudo apt update && sudo apt install php php-zip php-mbstring php-dom -y
+ ```
+
+#### Install Composer
+``` sh
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+php composer-setup.php --install-dir=/home/utku/.local/bin --filename=composer
+```
+
+#### Install Laravel
+``` sh
+composer global require "laravel/installer"
+```
+
 
 ### Visual Studio Code
  1. [Download the .deb package](https://code.visualstudio.com/docs/?dv=linux64_deb) 

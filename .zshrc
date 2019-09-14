@@ -102,4 +102,4 @@ alias python=python3
 alias pip=pip3
 alias vim=nvim
 
-export PATH="$HOME/.local/bin:$HOME/bin:$HOME/.node_modules_global/bin:$PATH"
+export PATH="$HOME/.config/composer/vendor/bin:$HOME/.local/bin:$HOME/bin:$HOME/.node_modules_global/bin:$PATH" 
