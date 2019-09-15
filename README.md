@@ -220,17 +220,32 @@ composer global require "laravel/installer"
 ### Visual Studio Code
  1. [Download the .deb package](https://code.visualstudio.com/docs/?dv=linux64_deb) 
  2. Download Extensions
-    * Vim 
-    * Python
-    * ESLint
-    * Prettier
-    * Dracula *or* Winter Is Coming
-    * Live Server
-    * ES7 React/Redux/GraphQL/React-Native snippets
-    * REST Client
-    * GitLens
-    * Material Icon Theme
-    * Auto Rename Tag
+      - General
+         * Vim 
+         * GitLens
+         * Docker
+      - Appearance
+         * Dracula Official *or* Winter Is Coming
+         * Material Icon Theme
+      - Remote Development
+         * Remote - SSH
+         * Remote - SSH: Editing Configuration Files
+         * Remote - SSH: Explorer
+      - Web Development
+         * REST Client
+         * Auto Rename Tag
+         * Live Server
+      - JavaScript
+         * Prettier
+         * ESLint
+         * ES7 React/Redux/GraphQL/React-Native snippets
+      - PHP
+         * PHP Debug
+         * PHP Intelephense
+         * phpfmt - PHP formatter
+      - Python
+         * Python
+
  3. Copy the [settings file](vscode.settings.json) contents into `settings.json`
  4. `Ctrl+Shift+P > Python: Select Interpreter > Python 3.X`
  5. `npm install -g eslint`
