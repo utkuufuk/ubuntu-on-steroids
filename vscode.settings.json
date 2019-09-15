@@ -4,6 +4,7 @@
 
     // WINDOW
     "window.titleBarStyle": "custom",
+    "window.openFilesInNewWindow": "on",
 
     // WORKBENCH
     "workbench.colorTheme": "Dracula",
@@ -37,12 +38,14 @@
     "breadcrumbs.enabled": false,
 
     // EXPLORER
+    "explorer.openEditors.visible": 0,
     "explorer.sortOrder": "filesFirst",
 
     // EDITOR
     "editor.copyWithSyntaxHighlighting": false,
     "editor.cursorSmoothCaretAnimation": true,
-    "editor.fontFamily": "'Courier Prime Code', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontFamily": "'Fira Code Retina', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontLigatures": true,
     "editor.fontSize": 16,
     "editor.formatOnSave": true,
     "editor.minimap.enabled": false,
@@ -109,6 +112,5 @@
     "vim.handleKeys": {
         "<C-a>": false,
         "<C-f>": false
-    },
+    }
 }
-
