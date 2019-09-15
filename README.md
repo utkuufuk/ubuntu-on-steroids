@@ -84,9 +84,12 @@ rm gitbatch_0.4.2_linux_amd64.tar.gz
  1. [Hack](https://github.com/source-foundry/Hack/releases/download/v3.003/Hack-v3.003-ttf.zip)
  2. [Courier Prime Code](https://www.fontsquirrel.com/fonts/courier-prime-code)
  3. [Input](http://input.fontbureau.com/download/index.html?size=15&language=python&theme=monokai&family=InputMono&width=300&weight=400&line-height=1.3&a=ss&g=ss&i=serifs_round&l=serifs_round&zero=slash&asterisk=height&braces=0&preset=default&customize=please)
- 4. Source Code Pro
+ 4. Fira Code
     ``` sh
-    # download & install Source Code Pro
+    sudo apt install fonts-firacode
+    ```
+ 5. Source Code Pro
+    ``` sh
     git clone --depth 1 --branch release https://github.com/adobe-fonts/source-code-pro.git ~/.fonts/adobe-fonts/source-code-pro
     fc-cache -f -v ~/.fonts/adobe-fonts/source-code-pro
     ```
