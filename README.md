@@ -197,7 +197,12 @@ See [additional tips](./nodejs.md) for more info.
 ### PHP
 #### Install PHP
  ```sh
- sudo apt update && sudo apt install php php-zip php-mbstring php-dom -y
+ sudo apt update && sudo apt install \
+   php \
+   php-zip \
+   php-mbstring \
+   php-dom \
+   php-xdebug -y
  ```
 
 #### Install Composer
