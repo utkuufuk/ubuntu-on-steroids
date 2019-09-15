@@ -85,6 +85,9 @@ source $ZSH/oh-my-zsh.sh
 # fi
 
 export EDITOR='nvim'
+export ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
+export ZSH_AUTOSUGGEST_USE_ASYNC=1
+export XDEBUG_CONFIG="idekey=VSCODE"
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
