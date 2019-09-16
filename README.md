@@ -199,10 +199,12 @@ See [additional tips](./nodejs.md) for more info.
  ```sh
  sudo apt update && sudo apt install \
    php \
-   php-zip \
-   php-mbstring \
    php-dom \
-   php-xdebug -y
+   php-mbstring \
+   php-mysql \
+   php-xdebug \
+   php-zip \
+   -y
  ```
 
 #### Install Composer
@@ -348,6 +350,15 @@ docker run --name=<container_name> -d mysql/mysql-server:<tag>
     ``` sh
     ALTER USER 'root'@'localhost' IDENTIFIED BY '<new_password>';
     ```
+
+#### Connect via Client
+``` sh
+# install client
+sudo apt install mysql-client
+
+# connect
+mysql -h HOST -P PORT_NUMBER -u USERNAME -p
+```
 
 #### Backup & Restore
 Backup & restore a particular database while MySQL container is running:
