@@ -226,6 +226,7 @@ composer global require "laravel/installer"
          * Vim 
          * GitLens
          * Docker
+         * Create Files & Folders: On The Go
       - Appearance
          * Dracula Official *or* Winter Is Coming
          * Material Icon Theme
