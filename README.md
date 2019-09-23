@@ -222,14 +222,13 @@ composer global require "laravel/installer"
 ### Visual Studio Code
  1. [Download the .deb package](https://code.visualstudio.com/docs/?dv=linux64_deb) 
  2. Download Extensions
-      - General
-         * Vim 
-         * GitLens
-         * Docker
-         * Create Files & Folders: On The Go
       - Appearance
          * Dracula Official *or* Winter Is Coming
          * Material Icon Theme
+      - Editor
+         * Vim
+         * GitLens
+         * EditorConfig for VS Code
       - Remote Development
          * Remote - SSH
          * Remote - SSH: Editing Configuration Files
@@ -248,6 +247,9 @@ composer global require "laravel/installer"
          * phpfmt - PHP formatter
       - Python
          * Python
+      - Other
+         * Docker
+         * Create Files & Folders: On The Go
 
  3. Copy the [settings file](vscode.settings.json) contents into `settings.json`
  4. `Ctrl+Shift+P > Python: Select Interpreter > Python 3.X`
