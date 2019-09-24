@@ -363,13 +363,13 @@ See [cheatsheet](./docker.md) for more info.
 ### MySQL
 #### Download MySQL Docker Image
 ```sh
-docker pull mysql/mysql-server:<tag>
+docker pull mysql/mysql:<tag>
 ```
 
 #### Start MySQL Container
 ``` sh
-# start server
-docker run --name=<container_name> -d mysql/mysql-server:<tag>
+# publish default port, provide a root password and start mysql
+docker run --name <container_name> -p 3306:3306 -e MYSQL_ROOT_PASSWORD=<root_pw> mysql:<tag>
 ```
 
 #### Connect to MySQL Server from within the Container
