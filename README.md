@@ -7,7 +7,7 @@
  5. [Neovim](#neovim)
  6. [Terminal & Shell](#terminal--shell)
  7. [Node.js](#nodejs)
- 8. [PHP](#php)
+ 8. [Laravel](#laravel)
  9. [Visual Studio Code](#visual-studio-code)
  10. [Other Tools](#other-tools)
  11. [Docker](#docker)
@@ -173,30 +173,53 @@ rm gitbatch_0.4.2_linux_amd64.tar.gz
 <br>
 
 ### Node.js
+#### Install NVM
+Note that the version number may differ:
+``` sh
+# download the installer script
+curl -sL https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh -o install_nvm.sh
+
+# install
+chmod +x install_nvm.sh && ./install_nvm.sh
+
+# delete installer
+rm install_nvm.sh
+
+# update current session
+source ~/.profile
+```
+
 #### Install Node.js
- ```sh
- # install nodejs 11
- curl -sL https://deb.nodesource.com/setup_11.x | sudo -E bash -
- sudo apt install -y nodejs
- ```
+```sh
+# list available versions
+nvm ls-remote
 
-#### Change the Location of Global Packages
- 1. `cd ~ && mkdir .node_modules_global`
- 2. `npm config set prefix=$HOME/.node_modules_global`
- 3. `npm install npm@latest -g`
+# install desired version(s) 
+nvm install x.y.z
 
-#### Configure Defaults
- ```sh
- npm config set init.author.name <name>
- npm config set init.author.email <email>
- ```
+# use desired node version
+nvm use x.y.z
+```
+
+#### Configure
+``` sh
+# change the location of global packages
+cd ~ && mkdir .node_modules_global
+npm config set prefix=$HOME/.node_modules_global
+npm install npm@latest -g
+
+# set author info
+npm config set init.author.name <name>
+npm config set init.author.email <email>
+```
+
 See [additional tips](./nodejs.md) for more info.
 <br>
 <br>
 
-### PHP
+### Laravel
 #### Install PHP 7.3
- ```sh
+```sh
 sudo apt update 
 sudo apt install software-properties-common
 sudo add-apt-repository ppa:ondrej/php
@@ -217,7 +240,7 @@ sudo apt install \
    php7.3-soap \
    php7.3-zip \
    php7.3-intl -y
- ```
+```
 
 #### Install Composer
 ``` sh
@@ -229,7 +252,6 @@ php composer-setup.php --install-dir=/home/utku/.local/bin --filename=composer
 ``` sh
 composer global require "laravel/installer"
 ```
-
 
 ### Visual Studio Code
  1. [Download the .deb package](https://code.visualstudio.com/docs/?dv=linux64_deb) 
