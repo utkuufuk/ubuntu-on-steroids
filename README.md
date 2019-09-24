@@ -253,6 +253,29 @@ php composer-setup.php --install-dir=/home/utku/.local/bin --filename=composer
 composer global require "laravel/installer"
 ```
 
+#### Install XDebug
+ 1. Clone the [XDebug repo.](https://github.com/xdebug/xdebug)
+ 2. From within the repo dir, run the following commands:
+    ``` sh
+    phpize
+    ./configure --enable-xdebug
+    make clean
+    make
+    sudo make install
+    ```
+ 3. Add the following lines into your `php.ini`. (You can locate your `php.ini` by running the `php --ini` command)
+    ``` sh
+    zend_extension="xdebug.so"
+
+    [XDebug]
+    xdebug.remote_enable = 1
+    xdebug.remote_autostart = 1
+    ```
+ 4. Verify that XDebug is successfuly installed by running the following command (it should match):
+    ``` sh
+    php -v | grep "Xdebug"
+    ```
+
 ### Visual Studio Code
  1. [Download the .deb package](https://code.visualstudio.com/docs/?dv=linux64_deb) 
  2. Download Extensions
