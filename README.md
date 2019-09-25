@@ -239,6 +239,7 @@ sudo apt install \
    php7.3-opcache \
    php7.3-soap \
    php7.3-zip \
+   php7.3-gmp \
    php7.3-intl -y
 ```
 
