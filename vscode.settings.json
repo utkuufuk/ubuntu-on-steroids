@@ -28,7 +28,6 @@
     "workbench.iconTheme": "material-icon-theme",
     "workbench.settings.editor": "json",
     "workbench.startupEditor": "newUntitledFile",
-    "workbench.statusBar.feedback.visible": false,
 
     // TERMINAL
     "terminal.integrated.fontFamily": "'Hack', 'monospace', monospace, 'Droid Sans Fallback'",
@@ -61,17 +60,17 @@
     "[jsonc]": {
         "editor.formatOnSave": false
     },
+    
+    "blade.format.enable": true,
 
     // PRETTIER
     "prettier.arrowParens": "always",
     "prettier.bracketSpacing": false,
-    "prettier.eslintIntegration": true,
     "prettier.jsxBracketSameLine": true,
     "prettier.jsxSingleQuote": true,
     "prettier.printWidth": 100,
     "prettier.singleQuote": true,
     "prettier.tabWidth": 4,
-    "prettier.tslintIntegration": true,
 
     // VIM
     "vim.easymotion": true,
@@ -114,3 +113,4 @@
         "<C-f>": false
     }
 }
+

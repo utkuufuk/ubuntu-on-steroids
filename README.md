@@ -292,6 +292,7 @@ composer global require "laravel/installer"
          * PHP Debug
          * PHP Intelephense
          * phpfmt - PHP formatter
+         * Larevel Blade Snippets
       - Python
          * Python
       - Other
