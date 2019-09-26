@@ -1,19 +1,6 @@
 " Specify a directory for plugins
 call plug#begin('~/.config/nvim/plugged')
 
-" Vim Markdown Composer plugin
-function! BuildComposer(info)
-  if a:info.status != 'unchanged' || a:info.force
-    if has('nvim')
-      !cargo build --release
-    else
-      !cargo build --release --no-default-features --features json-rpc
-    endif
-  endif
-endfunction
-
-Plug 'euclio/vim-markdown-composer', { 'do': function('BuildComposer') }
-
 " YouCompleteMe plugin
 function! BuildYCM(info)
   " info is a dictionary with 3 fields
@@ -26,8 +13,6 @@ function! BuildYCM(info)
 endfunction
 
 Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
-
-Plug 'lervag/vimtex'
 
 Plug 'tpope/vim-fugitive'
 

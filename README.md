@@ -115,19 +115,8 @@ rm gitbatch_0.4.2_linux_amd64.tar.gz
  2. [Install Vim-Plug](https://github.com/junegunn/vim-plug)
     > `curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim`
 
- 3. Install Plugins
-    1. [Vim Markdown Composer](https://github.com/euclio/vim-markdown-composer)
-        * `curl https://sh.rustup.rs -sSf \| sh`
-    2. [Vimtex](https://github.com/lervag/vimtex)
-        * `sudo apt install latexmk`
-        * `sudo apt install texlive`
-        * `sudo apt install texlive-latex-extra`
-        * `mkdir ~/texmf`
-        * `mkdir ~/texmf/tex`
-        * Place all `.sty` files inside `tex` folder.
-    3. Activate Plugins
-        * `vim ~/.config/nvim/init.vim`
-        * `:PlugInstall`
+ 3. Activate plugins by using the command `:PlugInstall` in `vim ~/.config/nvim/init.vim`
+
 <br>
 
 ### Terminal & Shell
