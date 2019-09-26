@@ -19,7 +19,8 @@ composer install
     ```
  2. Rename `resources/js/components/Example.js` as `App.jsx`. Also rename the class as `App`, and HTML element ID as `app`.
  3. Replace `Example` with `App` in `resources/js/app.js`
- 4. Replace the section that starts with `<div class="content">` in `resources/views/welcome.blade.php` with the following:
+ 4. Create a new dir: `resources/assets` and move `js` and `sass` into it, then edit `webpack.mix.js` accordingly.
+ 5. Replace the section that starts with `<div class="content">` in `resources/views/welcome.blade.php` with the following:
     ``` html
     <!-- other stuff -->
 
@@ -30,11 +31,11 @@ composer install
 
             </div>
         </body>
-        <script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript" src="{{mix('js/app.js')}}"></script>
     </html>
     ```
- 5. Install dependencies and compile the React code with Laravel Mix:
+ 6. Install dependencies and compile the React code with Laravel Mix:
     ``` sh
     npm install
-    npm run dev
+    npm run hot
     ``` 
