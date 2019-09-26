@@ -266,6 +266,8 @@ composer global require "laravel/installer"
     php -v | grep "Xdebug"
     ```
 
+See [additional tips](laravel.md) for more info.
+
 ### Visual Studio Code
  1. [Download the .deb package](https://code.visualstudio.com/docs/?dv=linux64_deb) 
  2. Download Extensions
