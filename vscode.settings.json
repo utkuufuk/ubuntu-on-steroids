@@ -51,6 +51,7 @@
     "editor.rulers": [100],
     "editor.suggestSelection": "first",
     "editor.wordWrapColumn": 100,
+    "editor.detectIndentation": false,
     "[yaml]": {
         "editor.formatOnSave": false
     },
@@ -70,7 +71,7 @@
     "prettier.jsxSingleQuote": true,
     "prettier.printWidth": 100,
     "prettier.singleQuote": true,
-    "prettier.tabWidth": 4,
+    "prettier.tabWidth": 2,
 
     // VIM
     "vim.easymotion": true,
@@ -111,6 +112,5 @@
     "vim.handleKeys": {
         "<C-a>": false,
         "<C-f>": false
-    }
+    },
 }
-
