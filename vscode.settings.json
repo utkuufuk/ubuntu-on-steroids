@@ -1,3 +1,4 @@
+
 {
     // INTELLICODE
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
@@ -72,6 +73,7 @@
     "prettier.printWidth": 100,
     "prettier.singleQuote": true,
     "prettier.tabWidth": 2,
+    "prettier.trailingComma": "es5",
 
     // VIM
     "vim.easymotion": true,
@@ -114,3 +116,4 @@
         "<C-f>": false
     },
 }
+
