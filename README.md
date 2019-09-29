@@ -292,6 +292,7 @@ See [additional tips](laravel.md) for more info.
          * ES7 React/Redux/GraphQL/React-Native snippets
       - PHP
          * PHP Debug
+         * PHP DocBlocker
          * PHP Intelephense
          * phpfmt - PHP formatter
          * Larevel Blade Snippets
