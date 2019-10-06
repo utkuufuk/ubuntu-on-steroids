@@ -1,4 +1,3 @@
-
 {
     // INTELLICODE
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
@@ -31,7 +30,7 @@
     "workbench.startupEditor": "newUntitledFile",
 
     // TERMINAL
-    "terminal.integrated.fontFamily": "'Hack', 'monospace', monospace, 'Droid Sans Fallback'",
+    "terminal.integrated.fontFamily": "'Fira Code Retina', 'monospace', monospace, 'Droid Sans Fallback'",
     "terminal.integrated.fontSize": 16,
 
     // BREADCRUMBS
@@ -44,6 +43,7 @@
     // EDITOR
     "editor.copyWithSyntaxHighlighting": false,
     "editor.cursorSmoothCaretAnimation": true,
+    "editor.detectIndentation": false,
     "editor.fontFamily": "'Fira Code Retina', 'monospace', monospace, 'Droid Sans Fallback'",
     "editor.fontLigatures": true,
     "editor.fontSize": 16,
@@ -52,7 +52,6 @@
     "editor.rulers": [100],
     "editor.suggestSelection": "first",
     "editor.wordWrapColumn": 100,
-    "editor.detectIndentation": false,
     "[yaml]": {
         "editor.formatOnSave": false
     },
@@ -62,7 +61,7 @@
     "[jsonc]": {
         "editor.formatOnSave": false
     },
-    
+
     "blade.format.enable": true,
 
     // PRETTIER
