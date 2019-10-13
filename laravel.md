@@ -45,6 +45,7 @@ composer install
 Update permissions of the shared folder:
 ``` sh
 chown -R www-data:www-data /var/www/html/<project>/shared
+chmod -R g+w /var/www/html/<project>/shared
 ```
 
 ### Update Sites-Available
@@ -65,6 +66,21 @@ Enable `mod_rewrite`:
 ```
 sudo a2enmod rewrite
 ```
+
+### Edit Visudo
+In order to bypass the Deployer `no tty` error
+```
+# edit the sudoers file
+sudo visudo
+```
+
+Update this line:
+```
+# Allow members of group sudo to execute any command
+%sudo   ALL=(ALL:ALL) NOPASSWD: ALL
+```
+
+Make sure that your user is in `sudo` group!
 
 ### Restart Apache
 ```
