@@ -41,12 +41,8 @@ composer install
     ``` 
     
 ## Deployment
-### Permissions
-Update permissions of the shared folder:
-``` sh
-chown -R www-data:www-data /var/www/html/<project>/shared
-chmod -R g+w /var/www/html/<project>/shared
-```
+### Env Configuration
+Create directories: `<project>/shared` and create a `.env` file inside `<project>/shared` with your environment variables.
 
 ### Update Sites-Available
 Update `/etc/apache2/sites-available/000-default.conf` file:
