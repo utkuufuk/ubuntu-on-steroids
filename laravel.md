@@ -40,45 +40,56 @@ composer install
     npm run hot
     ``` 
     
-## Deployment
-### Env Configuration
-Create directories: `<project>/shared` and create a `.env` file inside `<project>/shared` with your environment variables.
+## Deploying with [Deployer](https://deployer.org/)
+### Server Configuration
+In your Ubuntu server:
+ 1. Create Directories & Configure Environment
+    - Create directory: `/var/www/html/<project>/shared`
+    - Copy your `.env` file inside `/var/www/html/<project>/shared`
+ 2. Edit `/etc/apache2/sites-available/000-default.conf` as follows: 
+    ``` con
+    # edit this line
+    DocumentRoot /var/www/html/<project>/current/public
 
-### Update Sites-Available
-Update `/etc/apache2/sites-available/000-default.conf` file:
-``` conf
-# update this
-DocumentRoot /var/www/html/<project>/current/public
+        # insert this block within <VirtualHost> tag
+        <Directory /var/www/html/<project>/current/public>
+            Options Indexes FollowSymLinks MultiViews
+            AllowOverride All
+            Require all granted
+        </Directory>
+    ```
+ 3. Enable `mod_rewrite`:
+    ``` sh
+    sudo a2enmod rewrite
+    ```
+ 4. Update `sudoers`:
+    - Run: `sudo visudo`
+    - Update the following line:
+        ``` 
+        # make sure that your user is in `sudo` group
+        %sudo   ALL=(ALL:ALL) NOPASSWD: ALL
+        ```
+ 5. Restart Apache: 
+    ```
+    sudo systemctl restart apache2
+    ```
 
-    # insert this inside <VirtualHost>
-    <Directory /var/www/html/periodic/current/public>
-        Options Indexes FollowSymLinks MultiViews
-        AllowOverride All
-        Require all granted
-    </Directory>
-```
-
-Enable `mod_rewrite`:
-```
-sudo a2enmod rewrite
-```
-
-### Edit Visudo
-In order to bypass the Deployer `no tty` error
-```
-# edit the sudoers file
-sudo visudo
-```
-
-Update this line:
-```
-# Allow members of group sudo to execute any command
-%sudo   ALL=(ALL:ALL) NOPASSWD: ALL
-```
-
-Make sure that your user is in `sudo` group!
-
-### Restart Apache
-```
-systemctl restart apache2
-```
+### Deploy
+In your development machine:
+ 1. Install [Deployer](https://deployer.org/):
+    ``` sh
+    curl -LO https://deployer.org/deployer.phar
+    mv deployer.phar /usr/local/bin/dep
+    chmod +x /usr/local/bin/dep 
+    ```
+ 2. Create a `deploy.php` file in your project directory using the `dep init` command.
+ 3. (Optionally for forwarding SSH credentials) create `~/.ssh/config` with the following content:
+    ``` sh
+    Host <hostname>
+        User <username>
+        ForwardAgent yes
+    ```
+ 4. Deploy:
+    ```sh
+    dep deploy <hostname>
+    ```
