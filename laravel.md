@@ -87,12 +87,17 @@ In your development machine:
     chmod +x /usr/local/bin/dep 
     ```
  2. Create a `deploy.php` file in your project directory using the `dep init` command.
- 3. (Optionally for forwarding SSH credentials) create `~/.ssh/config` with the following content:
-    ``` sh
-    Host <hostname>
-        User <username>
-        ForwardAgent yes
-    ```
+ 3. Optionally enable forwarding your SSH credentials: 
+    - Create `~/.ssh/config` with the following content:
+        ``` sh
+        Host <hostname>
+            User <username>
+            ForwardAgent yes
+        ```
+    - Add your SSH key into Keychain:
+        ```sh
+        ssh-add -K <your_key> # e.g. ~/.ssh/id_rsa
+        ```
  4. Deploy:
     ```sh
     dep deploy <hostname>
