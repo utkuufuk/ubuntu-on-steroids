@@ -447,5 +447,5 @@ See [cheatsheet](https://gist.github.com/bradtraversy/c831baaad44343cc945e76c2e3
 netstat -tlnp
 
 # get lines of code in a particular language within a Git repository
-git ls-files | grep '\.py' | xargs wc -l
+git ls-files | grep '\.py$' | xargs wc -l
 ```
