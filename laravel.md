@@ -39,3 +39,34 @@ composer install
     npm install
     npm run hot
     ``` 
+    
+## Deployment
+### Permissions
+Update permissions of the shared folder:
+``` sh
+chown -R www-data:www-data /var/www/html/<project>/shared
+```
+
+### Update Sites-Available
+Update `/etc/apache2/sites-available/000-default.conf` file:
+``` conf
+# update this
+DocumentRoot /var/www/html/<project>/current/public
+
+    # insert this inside <VirtualHost>
+    <Directory /var/www/html/periodic/current/public>
+        Options Indexes FollowSymLinks MultiViews
+        AllowOverride All
+        Require all granted
+    </Directory>
+```
+
+Enable `mod_rewrite`:
+```
+sudo a2enmod rewrite
+```
+
+### Restart Apache
+```
+systemctl restart apache2
+```
