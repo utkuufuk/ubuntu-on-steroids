@@ -46,6 +46,10 @@ In your Ubuntu server:
  1. Create Directories & Configure Environment
     - Create directory: `/var/www/html/<project>/shared`
     - Copy your `.env` file inside `/var/www/html/<project>/shared`
+    - Update the owner of `shared` directory:
+        ```sh
+        sudo chown -R www-data:www-data /var/www/html/<project>/shared
+        ```
  2. Edit `/etc/apache2/sites-available/000-default.conf` as follows: 
     ``` con
     # edit this line
