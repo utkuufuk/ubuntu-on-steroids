@@ -331,6 +331,9 @@ See [additional tips](laravel.md) for more info.
     ./install_sack.sh && \
     cd .. && \
     rm -rf sack
+    
+    # 3. fix ack
+    curl https://beyondgrep.com/ack-v3.1.2 > ~/bin/ack && chmod 0755 ~/bin/ack
    ```
 <br>
 
