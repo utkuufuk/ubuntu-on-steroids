@@ -123,17 +123,23 @@ rm gitbatch_0.4.2_linux_amd64.tar.gz
 #### [Tilix](https://github.com/gnunn1/tilix)
  1. Install Tilix
     > `sudo apt install tilix`
- 2. Customize Tilix Appearance
+ 2. Install Dracula Theme
+    ```sh
+    curl -o ~/.config/tilix/schemes/Dracula.json --create-dirs https://raw.githubusercontent.com/dracula/tilix/master/Dracula.json
+    ```
+ 3. Customize Tilix Appearance
     * *Preferences > Appearance > Window Style > Disable CSD && hide toolbar*
     * *Preferences > Appearance > Terminal Title Style > None*
-    * *Preferences > Profile > Color > Color scheme > Monokai Dark*
- 3. Configure Tilix Keyboard Shortcuts
-    * *Preferences > Shortcuts > Replace **`Switch to next session`** shortcut with **`Ctrl+T`***
+    * *Preferences > Profile > Color > Color scheme > Dracula*
+ 4. Configure Tilix Keyboard Shortcuts
+    * *Preferences > Shortcuts > Replace **`Switch to next session`** shortcut with **`Alt+Right`***
+    * *Preferences > Shortcuts > Replace **`Switch to previous session`** shortcut with **`Alt+Left`***
+    * *Preferences > Shortcuts > Replace **`Paste`** shortcut with **`Ctrl+V`***
     * *Preferences > Shortcuts > Replace **`Resize the terminal down`** shortcut with **`Shift+Ctrl+Down`***
     * *Preferences > Shortcuts > Replace **`Resize the terminal up`** shortcut with **`Shift+Ctrl+Up`***
     * *Preferences > Shortcuts > Replace **`Resize the terminal right`** shortcut with **`Shift+Ctrl+Right`***
     * *Preferences > Shortcuts > Replace **`Resize the terminal left`** shortcut with **`Shift+Ctrl+Left`***
- 4. Configure System Keyboard Shortcuts
+ 5. Configure System Keyboard Shortcuts
     * *Keyboard Shortcuts > Remove Default Action for **`Ctrl+Alt+T`***
     * *Keyboard Shortcuts > Bind **`Ctrl+Alt+T`** to Custom Shortcut for Launching Tilix*
     * *Keyboard Shortcuts > Disable Shortcut for **`Hide all normal windows`***
