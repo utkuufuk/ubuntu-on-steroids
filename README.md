@@ -381,7 +381,7 @@ See [cheatsheet](./docker.md) for more info.
 ### MySQL
 #### Download MySQL Docker Image
 ```sh
-docker pull mysql/mysql:<tag>
+docker pull mysql:<tag>
 ```
 
 #### Start MySQL Container
