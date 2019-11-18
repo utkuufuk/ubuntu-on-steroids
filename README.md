@@ -172,7 +172,7 @@ rm gitbatch_0.4.2_linux_amd64.tar.gz
 Note that the version number may differ:
 ``` sh
 # download the installer script
-curl -sL https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh -o install_nvm.sh
+curl -sL https://raw.githubusercontent.com/creationix/nvm/v0.35.0/install.sh -o install_nvm.sh
 
 # install
 chmod +x install_nvm.sh && ./install_nvm.sh
@@ -194,16 +194,13 @@ nvm install x.y.z
 
 # use desired node version
 nvm use x.y.z
+
+# update npm
+npm install npm@latest -g
 ```
 
 #### Configure
 ``` sh
-# change the location of global packages
-cd ~ && mkdir .node_modules_global
-npm config set prefix=$HOME/.node_modules_global
-npm install npm@latest -g
-
-# set author info
 npm config set init.author.name <name>
 npm config set init.author.email <email>
 ```
