@@ -52,6 +52,20 @@
     "editor.rulers": [100],
     "editor.suggestSelection": "first",
     "editor.wordWrapColumn": 100,
+
+    // FORMATTERS
+    "phpfmt.cakephp": true,
+    "blade.format.enable": true,
+    "go.useLanguageServer": true,
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
     "[yaml]": {
         "editor.formatOnSave": false
     },
@@ -61,17 +75,6 @@
     "[jsonc]": {
         "editor.formatOnSave": false
     },
-
-    "blade.format.enable": true,
-
-    // PRETTIER
-    "prettier.arrowParens": "always",
-    "prettier.jsxBracketSameLine": true,
-    "prettier.jsxSingleQuote": true,
-    "prettier.printWidth": 100,
-    "prettier.singleQuote": true,
-    "prettier.tabWidth": 2,
-    "prettier.trailingComma": "es5",
 
     // VIM
     "vim.easymotion": true,

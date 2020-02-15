@@ -1,6 +1,6 @@
 # Ubuntu on Steroids
 ### Table of Contents
- 1. [Core Dependencies](#core-dependencies)
+ 1. [Common Dependencies](#common-dependencies)
  2. [Common Tools & Drivers](#common-tools--drivers)
  3. [Git & Github](#git--github)
  4. [Theme](#theme)
@@ -15,7 +15,7 @@
  13. [DigitalOcean](#digitalocean)
  14. [Useful Commands](#useful-commands)
 
-### Core Dependencies
+### Common Dependencies
  * `sudo apt install net-tools`
  * `sudo apt install curl`
  * `sudo apt install python3-pip`
@@ -281,9 +281,9 @@ composer global require "laravel/installer"
          * REST Client
          * Auto Rename Tag
          * Live Server
-      - JavaScript
-         * Prettier
-         * ESLint
+      - JavaScript & TypeScript
+         * Prettier ([prettierrc](./.prettierrc.yml))
+         * ESLint (`npm install -g eslint`)
          * ES7 React/Redux/GraphQL/React-Native snippets
       - PHP
          * PHP Debug
@@ -291,15 +291,14 @@ composer global require "laravel/installer"
          * PHP Intelephense
          * phpfmt - PHP formatter
          * Larevel Blade Snippets
+      - Go
+         * Go
       - Python
          * Python
       - Other
          * Docker
          * Create Files & Folders: On The Go
-
  3. Copy the [settings file](vscode.settings.json) contents into `settings.json`
- 4. `Ctrl+Shift+P > Python: Select Interpreter > Python 3.X`
- 5. `npm install -g eslint`
 
 #### Shortcuts
 | Shortcut | Description |

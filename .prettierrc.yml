@@ -1,0 +1,14 @@
+# .prettierrc or .prettierrc.yaml
+# @see https://prettier.io/docs/en/options.html
+# Some options include even if same as default for ease of review
+
+semi: true
+tabs: false
+tabWidth: 2
+endOfLine: "lf"
+printWidth: 100
+singleQuote: true   # JSX quotes ignores this option, see jsx-single-quote.
+arrowParens: "always"
+bracketSpacing: true
+trailingComma: "es5"
+jsxBracketSameLine: false
