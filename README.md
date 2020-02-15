@@ -36,13 +36,6 @@ sudo add-apt-repository ppa:obsproject/obs-studio
 sudo apt install obs-studio
 ```
 
-#### Skype
-``` sh
-wget https://go.skype.com/skypeforlinux-64.deb
-sudo apt install ./skypeforlinux-64.deb
-rm skypeforlinux-64.deb
-```
-
 #### Ubuntu Software
  * Dropbox 
  * Spotify
