@@ -76,6 +76,10 @@
         "editor.formatOnSave": false
     },
 
+    // PYTHON
+    "python.pythonPath": "/usr/bin/python3",
+    "python.testing.pytestEnabled": true,
+
     // VIM
     "vim.easymotion": true,
     "vim.sneak": true,

@@ -288,6 +288,8 @@ composer global require "laravel/installer"
          * Go
       - Python
          * Python
+         * AREPL for python
+         * autoDocstring
       - Other
          * Docker
          * Create Files & Folders: On The Go
