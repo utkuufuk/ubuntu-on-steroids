@@ -9,8 +9,7 @@
         "[Overnight Slumber]": {
             "editor.lineHighlightBackground": "#1a2835",
             "editor.lineHighlightBorder": "#123",
-            "editor.stackFrameHighlightBackground": "#3a701a",
-            "editor.focusedStackFrameHighlightBackground": "#4a802a"
+            "editor.stackFrameHighlightBackground": "#304424",
         },
         "[Winter is Coming (Dark Blue - No Italics)]": {
             "editor.lineHighlightBackground": "#234",
