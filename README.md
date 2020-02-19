@@ -260,7 +260,7 @@ composer global require "laravel/installer"
  1. [Download the .deb package](https://code.visualstudio.com/docs/?dv=linux64_deb) 
  2. Download Extensions
       - Appearance
-         * Dracula Official *or* Winter Is Coming
+         * Overnight *or* Winter Is Coming *or* Dracula Official 
          * Material Icon Theme
       - Editor
          * Vim

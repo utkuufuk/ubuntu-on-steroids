@@ -1,13 +1,10 @@
 {
-    // INTELLICODE
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-
     // WINDOW
     "window.titleBarStyle": "custom",
     "window.openFilesInNewWindow": "on",
 
     // WORKBENCH
-    "workbench.colorTheme": "Dracula",
+    "workbench.colorTheme": "Overnight Slumber",
     "workbench.colorCustomizations": {
         "[Winter is Coming (Dark Blue - No Italics)]": {
             "editor.lineHighlightBackground": "#234",
@@ -18,11 +15,6 @@
             "tab.inactiveForeground": "#aaa",
             "editor.lineHighlightBackground": "#334"
         },
-        "[Monokai]": {
-            "tab.activeBackground": "#22882274",
-            "tab.activeBorder": "#7e8822",
-            "editor.lineHighlightBorder": "#333"
-        }
     },
     "workbench.editor.closeEmptyGroups": false,
     "workbench.iconTheme": "material-icon-theme",
