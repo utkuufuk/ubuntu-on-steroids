@@ -6,6 +6,12 @@
     // WORKBENCH
     "workbench.colorTheme": "Overnight Slumber",
     "workbench.colorCustomizations": {
+        "[Overnight Slumber]": {
+            "editor.lineHighlightBackground": "#1a2835",
+            "editor.lineHighlightBorder": "#123",
+            "editor.stackFrameHighlightBackground": "#3a701a",
+            "editor.focusedStackFrameHighlightBackground": "#4a802a"
+        },
         "[Winter is Coming (Dark Blue - No Italics)]": {
             "editor.lineHighlightBackground": "#234",
             "editor.lineHighlightBorder": "#123"
