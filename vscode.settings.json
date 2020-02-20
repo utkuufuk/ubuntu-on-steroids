@@ -9,17 +9,8 @@
         "[Overnight Slumber]": {
             "editor.lineHighlightBackground": "#1a2835",
             "editor.lineHighlightBorder": "#123",
-            "editor.stackFrameHighlightBackground": "#304424",
-        },
-        "[Winter is Coming (Dark Blue - No Italics)]": {
-            "editor.lineHighlightBackground": "#234",
-            "editor.lineHighlightBorder": "#123"
-        },
-        "[Dracula]": {
-            "tab.activeBackground": "#40598874",
-            "tab.inactiveForeground": "#aaa",
-            "editor.lineHighlightBackground": "#334"
-        },
+            "editor.stackFrameHighlightBackground": "#304424"
+        }
     },
     "workbench.editor.closeEmptyGroups": false,
     "workbench.iconTheme": "material-icon-theme",
