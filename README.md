@@ -321,6 +321,14 @@ composer global require "laravel/installer"
     cd .. && \
     rm -rf sack
    ```
+ * [fd](https://github.com/sharkdp/fd)
+    ```sh
+    sudo apt update && sudo apt install fd
+    ```
+ * [bat](https://github.com/sharkdp/bat)
+    ```sh
+    sudo apt update && sudo apt install bat
+    ```
 <br>
 
 ### Docker

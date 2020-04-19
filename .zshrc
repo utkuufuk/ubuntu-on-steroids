@@ -104,6 +104,7 @@ export XDEBUG_CONFIG="idekey=VSCODE"
 alias python=python3
 alias pip=pip3
 alias vim=nvim
+alias cat=bat
 
 export PATH="$HOME/.config/composer/vendor/bin:$HOME/.local/bin:$HOME/bin:$HOME/.node_modules_global/bin:$PATH" 
 
