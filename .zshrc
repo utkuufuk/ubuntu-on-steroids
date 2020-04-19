@@ -88,6 +88,7 @@ export EDITOR='nvim'
 export ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
 export ZSH_AUTOSUGGEST_USE_ASYNC=1
 export XDEBUG_CONFIG="idekey=VSCODE"
+export BAT_THEME="Dracula"
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
