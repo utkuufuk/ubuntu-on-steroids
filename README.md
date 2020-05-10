@@ -6,8 +6,8 @@
  4. [Theme](#theme)
  5. [Neovim](#neovim)
  6. [Terminal & Shell](#terminal--shell)
- 7. [Node.js](#nodejs)
- 8. [Rust](#rust)
+ 7. [Rust](#rust)
+ 8. [Node.js](#nodejs)
  9. [Laravel](#laravel)
  10. [Visual Studio Code](#visual-studio-code)
  11. [Other Tools](#other-tools)
@@ -142,6 +142,12 @@ git ls-files | grep '\.py$' | xargs wc -l
     * `source ~/.zshrc`
 <br>
 
+### Rust
+```sh
+curl https://sh.rustup.rs -sSf | sh
+source $HOME/.cargo/env
+```
+
 ### Node.js
 #### Install NVM
 Note that the version number may differ:
@@ -182,13 +188,6 @@ npm config set init.author.email <email>
 
 See [additional tips](./nodejs.md) for more info.
 <br>
-<br>
-
-### Rust
-```sh
-curl https://sh.rustup.rs -sSf | sh
-source $HOME/.cargo/env
-```
 
 ### Laravel
 #### Install PHP 7.3
