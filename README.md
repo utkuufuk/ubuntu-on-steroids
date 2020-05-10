@@ -14,7 +14,6 @@
  12. [Docker](#docker)
  13. [MySQL](#mysql)
  14. [DigitalOcean](#digitalocean)
- 15. [Useful Commands](#useful-commands)
 
 ### Common Dependencies
  * `sudo apt install net-tools`
@@ -47,16 +46,13 @@ sudo apt install obs-studio
 ### Git & Github
 #### Install Git & Configure SSH
  1. `sudo apt install git`
- 2. [Generate SSH Key](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)
- 3. [Add SSH Key to Github Account](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)
+ 2. [Generate SSH Key](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/) (or reuse an existing key)
+ 3. [Add SSH Key to Github Account](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/) (skip if reusing an existing key)
 
-#### [Oh My Repos](https://github.com/utkuufuk/oh-my-repos)
- 1. `sudo apt install myrepos`
- 2. `git clone https://github.com/utkuufuk/oh-my-repos`
- 3. `pip3 install oh-my-repos/.`
- 4. `rm -rf oh-my-repos`
-
-<br>
+``` sh
+# tip: get lines of code in a particular language within a Git repository
+git ls-files | grep '\.py$' | xargs wc -l
+```
 
 ### Theme
 #### Fonts
@@ -293,12 +289,6 @@ composer global require "laravel/installer"
          * Docker
          * Create Files & Folders: On The Go
  3. Copy the [settings file](vscode.settings.json) contents into `settings.json`
-
-#### Shortcuts
-| Shortcut | Description |
-| -------- | ----------- |
-| `Ctrl+B` | Toggle sidebar |
-| `Ctrl+,` | Open settings |
 <br>
 
 ### Other Tools
@@ -431,12 +421,3 @@ See [cheatsheet](https://gist.github.com/bradtraversy/c831baaad44343cc945e76c2e3
 ### DigitalOcean
  1. Follow the [Initial Server Setup](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-18-04) guide.
  2. Append public SSH keys of each client machine into the `~/.ssh/authorized_keys` file in droplet.
-
-### Useful Commands
-``` sh
-# list which processes listen on which TCP ports
-netstat -tlnp
-
-# get lines of code in a particular language within a Git repository
-git ls-files | grep '\.py$' | xargs wc -l
-```
