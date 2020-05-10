@@ -7,13 +7,14 @@
  5. [Neovim](#neovim)
  6. [Terminal & Shell](#terminal--shell)
  7. [Node.js](#nodejs)
- 8. [Laravel](#laravel)
- 9. [Visual Studio Code](#visual-studio-code)
- 10. [Other Tools](#other-tools)
- 11. [Docker](#docker)
- 12. [MySQL](#mysql)
- 13. [DigitalOcean](#digitalocean)
- 14. [Useful Commands](#useful-commands)
+ 8. [Rust](#rust)
+ 9. [Laravel](#laravel)
+ 10. [Visual Studio Code](#visual-studio-code)
+ 11. [Other Tools](#other-tools)
+ 12. [Docker](#docker)
+ 13. [MySQL](#mysql)
+ 14. [DigitalOcean](#digitalocean)
+ 15. [Useful Commands](#useful-commands)
 
 ### Common Dependencies
  * `sudo apt install net-tools`
@@ -48,15 +49,6 @@ sudo apt install obs-studio
  1. `sudo apt install git`
  2. [Generate SSH Key](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)
  3. [Add SSH Key to Github Account](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)
-
-#### [Gitbatch](https://github.com/isacikgoz/gitbatch)
-``` sh
-# lines 1, 2 and 4 must be modified for newer versions
-curl -OL https://github.com/isacikgoz/gitbatch/releases/download/v0.4.2/gitbatch_0.4.1_linux_amd64.tar.gz
-tar xzf gitbatch_0.4.2_linux_amd64.tar.gz
-mv gitbatch ~/bin
-rm gitbatch_0.4.2_linux_amd64.tar.gz
-```
 
 #### [Oh My Repos](https://github.com/utkuufuk/oh-my-repos)
  1. `sudo apt install myrepos`
@@ -196,6 +188,12 @@ See [additional tips](./nodejs.md) for more info.
 <br>
 <br>
 
+### Rust
+```sh
+curl https://sh.rustup.rs -sSf | sh
+source $HOME/.cargo/env
+```
+
 ### Laravel
 #### Install PHP 7.3
 ```sh
@@ -264,6 +262,7 @@ composer global require "laravel/installer"
          * Material Icon Theme
       - Editor
          * Vim
+         * TabNine
          * GitLens
          * EditorConfig for VS Code
       - Remote Development
@@ -306,7 +305,7 @@ composer global require "laravel/installer"
  * [Peek](https://github.com/phw/peek)
     ```sh
     sudo add-apt-repository ppa:peek-developers/stable
-    sudo apt update && sudo apt install peek
+    sudo apt install peek
     ```
  * [ag](https://github.com/ggreer/the_silver_searcher) & [sack](https://github.com/sampson-chen/sack)
     ``` sh
@@ -321,14 +320,9 @@ composer global require "laravel/installer"
     cd .. && \
     rm -rf sack
    ```
- * [fd](https://github.com/sharkdp/fd)
-    ```sh
-    sudo apt update && sudo apt install fd
-    ```
- * [bat](https://github.com/sharkdp/bat)
-    ```sh
-    sudo apt update && sudo apt install bat
-    ```
+ * [fd](https://github.com/sharkdp/fd) &nbsp;&mdash;&nbsp; `sudo apt install fd`
+ * [bat](https://github.com/sharkdp/bat) &nbsp;&mdash;&nbsp; `sudo apt install bat`
+ * [exa](https://github.com/ogham/exa) &nbsp;&mdash;&nbsp; `cargo install exa`
 <br>
 
 ### Docker
@@ -347,7 +341,7 @@ sudo add-apt-repository \
     "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 
 # 5. install docker
-sudo apt update && sudo apt install docker-ce
+sudo apt install docker-ce
 
 # 6. verify service status
 sudo systemctl status docker

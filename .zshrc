@@ -106,9 +106,9 @@ alias python=python3
 alias pip=pip3
 alias vim=nvim
 alias cat=bat
+alias l='exa -lah'
 
 export PATH="$HOME/.config/composer/vendor/bin:$HOME/.local/bin:$HOME/bin:$HOME/.node_modules_global/bin:$PATH" 
-
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
