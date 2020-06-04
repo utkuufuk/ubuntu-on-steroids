@@ -102,8 +102,15 @@ export BAT_THEME="Dracula"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# python aliases
 alias python=python3
 alias pip=pip3
+
+# docker aliases
+alias d="docker"
+alias dps="docker ps"
+
+# other aliases
 alias vim=nvim
 alias cat=bat
 alias l='exa -lah'
