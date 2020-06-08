@@ -6,14 +6,15 @@
  4. [Theme](#theme)
  5. [Neovim](#neovim)
  6. [Terminal & Shell](#terminal--shell)
- 7. [Rust](#rust)
- 8. [Node.js](#nodejs)
- 9. [Laravel](#laravel)
- 10. [Visual Studio Code](#visual-studio-code)
- 11. [Other Tools](#other-tools)
- 12. [Docker](#docker)
- 13. [MySQL](#mysql)
- 14. [DigitalOcean](#digitalocean)
+ 7. [Python](#python)
+ 8. [Rust](#rust)
+ 9. [Node.js](#nodejs)
+ 10. [Laravel](#laravel)
+ 11. [Visual Studio Code](#visual-studio-code)
+ 12. [Other Tools](#other-tools)
+ 13. [Docker](#docker)
+ 14. [MySQL](#mysql)
+ 15. [DigitalOcean](#digitalocean)
 
 ### Common Dependencies
  * `sudo apt install net-tools`
@@ -141,6 +142,47 @@ git ls-files | grep '\.py$' | xargs wc -l
     * `curl -o ~/.zshrc https://raw.githubusercontent.com/utkuufuk/ubuntu-on-steroids/master/.zshrc`
     * `source ~/.zshrc`
 <br>
+
+### Python
+#### Install Pyenv
+```sh
+curl https://pyenv.run | bash
+
+# init pyenv (see .zshrc)
+source ~/.zshrc
+```
+
+#### Install Build Dependencies
+```sh
+sudo apt update && sudo apt install -y make build-essential libssl-dev zlib1g-dev \
+libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev \
+libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev python-openssl git
+```
+
+#### Install Desired Releases
+```sh
+pyenv install 3.8.3
+pyenv install 3.7.7
+pyenv local 3.8.3 3.7.7
+```
+
+#### Install Poetry
+```sh
+curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
+source ~/.poetry/env
+
+# new project
+poetry init --no-interaction
+poetry install
+
+# run a Python session inside the virtual environment
+poetry run python
+
+# add & update a dependency
+poetry add google-api-python-client
+poetry update google-api-python-client
+poetry add google-api-python-client^2.0 # upgrade to major release
+```
 
 ### Rust
 ```sh

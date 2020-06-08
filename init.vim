@@ -1,27 +1,3 @@
-" Specify a directory for plugins
-call plug#begin('~/.config/nvim/plugged')
-
-" YouCompleteMe plugin
-function! BuildYCM(info)
-  " info is a dictionary with 3 fields
-  " - name:   name of the plugin
-  " - status: 'installed', 'updated', or 'unchanged'
-  " - force:  set on PlugInstall! or PlugUpdate!
-  if a:info.status == 'installed' || a:info.force
-    !./install.py
-  endif
-endfunction
-
-Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
-
-Plug 'tpope/vim-fugitive'
-
-" Initialize plugin system
-call plug#end()
-
-" Assume that .tex files are LaTeX
-let g:tex_flavor='latex'
-
 color torte
 
 " Enable syntax highlighting
