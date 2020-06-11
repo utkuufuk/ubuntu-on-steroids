@@ -7,14 +7,15 @@
  5. [Neovim](#neovim)
  6. [Terminal & Shell](#terminal--shell)
  7. [Python](#python)
- 8. [Rust](#rust)
- 9. [Node.js](#nodejs)
- 10. [Laravel](#laravel)
- 11. [Visual Studio Code](#visual-studio-code)
- 12. [Other Tools](#other-tools)
- 13. [Docker](#docker)
- 14. [MySQL](#mysql)
- 15. [DigitalOcean](#digitalocean)
+ 8. [Go](#go)
+ 9. [Rust](#rust)
+ 10. [Node.js](#nodejs)
+ 11. [Laravel](#laravel)
+ 12. [Visual Studio Code](#visual-studio-code)
+ 13. [Other Tools](#other-tools)
+ 14. [Docker](#docker)
+ 15. [MySQL](#mysql)
+ 16. [DigitalOcean](#digitalocean)
 
 ### Common Dependencies
  * `sudo apt install net-tools`
@@ -182,6 +183,13 @@ poetry run python
 poetry add google-api-python-client
 poetry update google-api-python-client
 poetry add google-api-python-client^2.0 # upgrade to major release
+```
+
+### Go
+```sh
+sudo add-apt-repository ppa:longsleep/golang-backports
+sudo apt update
+sudo apt install golang-go
 ```
 
 ### Rust
