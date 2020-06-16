@@ -102,6 +102,10 @@ export BAT_THEME="Dracula"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# additional git aliases
+alias glh='git pull origin $(git rev-parse --abbrev-ref HEAD)'
+alias gph='git push origin $(git rev-parse --abbrev-ref HEAD)'
+
 # docker aliases
 alias d="docker"
 alias dps="docker ps"
