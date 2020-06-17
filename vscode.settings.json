@@ -43,8 +43,10 @@
 
     // FORMATTERS
     "phpfmt.passes": [
+        "AddMissingParentheses",
         "AutoSemicolon",
-        "DoubleToSingleQuote"
+        "DoubleToSingleQuote",
+        "TrimSpaceBeforeSemicolon"
     ],
     "blade.format.enable": true,
     "go.useLanguageServer": true,
