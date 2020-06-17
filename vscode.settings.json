@@ -42,7 +42,10 @@
     "editor.wordWrapColumn": 100,
 
     // FORMATTERS
-    "phpfmt.cakephp": true,
+    "phpfmt.passes": [
+        "AutoSemicolon",
+        "DoubleToSingleQuote"
+    ],
     "blade.format.enable": true,
     "go.useLanguageServer": true,
     "[typescriptreact]": {
