@@ -326,7 +326,7 @@ composer global require "laravel/installer"
          * PHP Debug
          * PHP DocBlocker
          * PHP Intelephense
-         * phpfmt - PHP formatter
+         * php cs fixer
          * Larevel Blade Snippets
       - Go
          * Go
