@@ -362,6 +362,7 @@ composer global require "laravel/installer"
  * [fd](https://github.com/sharkdp/fd) &nbsp;&mdash;&nbsp; `sudo apt install fd`
  * [bat](https://github.com/sharkdp/bat) &nbsp;&mdash;&nbsp; `sudo apt install bat`
  * [exa](https://github.com/ogham/exa) &nbsp;&mdash;&nbsp; `cargo install exa`
+ * [icdiff](https://www.jefftk.com/icdiff) &nbsp;&mdash;&nbsp; `sudo apt install icdiff`
 <br>
 
 ### Docker
