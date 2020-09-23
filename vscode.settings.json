@@ -9,7 +9,8 @@
         "[Overnight Slumber]": {
             "editor.lineHighlightBackground": "#1a2835",
             "editor.lineHighlightBorder": "#123",
-            "editor.stackFrameHighlightBackground": "#304424"
+            "editor.stackFrameHighlightBackground": "#304424",
+            "list.focusBackground": "#003355"
         }
     },
     "workbench.editor.closeEmptyGroups": false,
