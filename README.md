@@ -417,7 +417,10 @@ docker pull mysql:<tag>
 #### Start MySQL Container
 ``` sh
 # publish default port, provide a root password and start mysql
-docker run --name <container_name> -p 3306:3306 -e MYSQL_ROOT_PASSWORD=<root_pw> mysql:<tag>
+docker run --name <container_name> -p 3306:3306 -e MYSQL_ROOT_PASSWORD=<pwd> mysql:<tag>
+
+# you can provide optional config params like max-allowed-packet
+docker run --name <container_name> -p 3306:3306 -it -e MYSQL_ROOT_PASSWORD=<pwd> mysql:<tag> --max-allowed-packet=67108864
 ```
 
 #### Connect to MySQL Server from within the Container
