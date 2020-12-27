@@ -1,0 +1,29 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "ctrl+s",
+        "command": "workbench.action.files.saveWithoutFormatting"
+    },
+    {
+        "key": "ctrl+k s",
+        "command": "-workbench.action.files.saveWithoutFormatting"
+    },
+    {
+        "key": "ctrl+k s",
+        "command": "workbench.action.files.save"
+    },
+    {
+        "key": "ctrl+s",
+        "command": "-workbench.action.files.save"
+    },
+    {
+        "key": "ctrl+shift+y",
+        "command": "workbench.action.closePanel",
+        // "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+y",
+        "command": "workbench.action.toggleMaximizedPanel",
+        "when": "!terminalFocus"
+    }
+]

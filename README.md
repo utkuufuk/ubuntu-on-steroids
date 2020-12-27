@@ -338,6 +338,7 @@ composer global require "laravel/installer"
          * Docker
          * Create Files & Folders: On The Go
  3. Copy the [settings file](vscode.settings.json) contents into `settings.json`
+ 4. Copy the [keybindings file](vscode.keybindings.json) contents into `keybindings.json`
 <br>
 
 ### Other Tools
