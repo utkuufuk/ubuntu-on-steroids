@@ -90,6 +90,7 @@ export ZSH_AUTOSUGGEST_USE_ASYNC=1
 export XDEBUG_CONFIG="idekey=VSCODE"
 export BAT_THEME="Dracula"
 
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -116,7 +117,7 @@ alias cat=bat
 alias l='exa -lah'
 alias diff=icdiff
 
-export PATH="$HOME/.pyenv/bin:$HOME/.cargo/bin:$HOME/.config/composer/vendor/bin:$HOME/.local/bin:$HOME/bin:$HOME/.node_modules_global/bin:$PATH" 
+export PATH="$HOME/.pyenv/bin:$HOME/.cargo/bin:$HOME/.config/composer/vendor/bin:$HOME/.local/bin:$HOME/bin:$HOME/go/bin:$PATH"
 
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
