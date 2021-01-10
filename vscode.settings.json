@@ -1,125 +1,125 @@
 {
-    // WINDOW
-    "window.titleBarStyle": "custom",
-    "window.openFilesInNewWindow": "on",
+  // WINDOW
+  "window.titleBarStyle": "custom",
+  "window.openFilesInNewWindow": "on",
 
-    // WORKBENCH
-    "workbench.colorTheme": "Overnight Slumber",
-    "workbench.colorCustomizations": {
-        "[Overnight Slumber]": {
-            "editor.lineHighlightBackground": "#1a2835",
-            "editor.lineHighlightBorder": "#123",
-            "editor.stackFrameHighlightBackground": "#304424",
-            "list.focusBackground": "#003355"
-        }
+  // WORKBENCH
+  "workbench.colorTheme": "Overnight Slumber",
+  "workbench.colorCustomizations": {
+    "[Overnight Slumber]": {
+      "editor.lineHighlightBackground": "#1a2835",
+      "editor.lineHighlightBorder": "#123",
+      "editor.stackFrameHighlightBackground": "#304424",
+      "list.focusBackground": "#003355"
+    }
+  },
+  "workbench.editor.closeEmptyGroups": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.settings.editor": "json",
+  "workbench.startupEditor": "newUntitledFile",
+
+  // TERMINAL
+  "terminal.integrated.fontFamily": "'Fira Code Retina', 'monospace', monospace, 'Droid Sans Fallback'",
+  "terminal.integrated.fontSize": 18,
+
+  // BREADCRUMBS
+  "breadcrumbs.enabled": false,
+
+  // EXPLORER
+  "explorer.openEditors.visible": 0,
+  "explorer.sortOrder": "filesFirst",
+
+  // EDITOR
+  "editor.copyWithSyntaxHighlighting": false,
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.detectIndentation": false,
+  "editor.fontFamily": "'Fira Code Retina', 'monospace', monospace, 'Droid Sans Fallback'",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 16,
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
+  "editor.rulers": [100],
+  "editor.suggestSelection": "first",
+  "editor.wordWrapColumn": 100,
+
+  // FORMATTERS
+  "tabnine.experimentalAutoImports": true,
+
+  "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
+  "php-cs-fixer.onsave": true,
+  "php-cs-fixer.rules": "@PSR2",
+  "php-cs-fixer.config": ".php_cs;.php_cs.dist",
+  "php-cs-fixer.allowRisky": false,
+  "php-cs-fixer.pathMode": "override",
+  "php-cs-fixer.exclude": [],
+  "php-cs-fixer.autoFixByBracket": true,
+  "php-cs-fixer.autoFixBySemicolon": true,
+  "php-cs-fixer.formatHtml": false,
+  "php-cs-fixer.documentFormattingProvider": true,
+  "blade.format.enable": true,
+
+  "go.useLanguageServer": true,
+
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[yaml]": {
+    "editor.formatOnSave": false
+  },
+  "[markdown]": {
+    "editor.formatOnSave": false
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
+
+  // VIM
+  "vim.easymotion": true,
+  "vim.sneak": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "d"],
+      "after": ["d", "d"]
     },
-    "workbench.editor.closeEmptyGroups": false,
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.settings.editor": "json",
-    "workbench.startupEditor": "newUntitledFile",
-
-    // TERMINAL
-    "terminal.integrated.fontFamily": "'Fira Code Retina', 'monospace', monospace, 'Droid Sans Fallback'",
-    "terminal.integrated.fontSize": 16,
-
-    // BREADCRUMBS
-    "breadcrumbs.enabled": false,
-
-    // EXPLORER
-    "explorer.openEditors.visible": 0,
-    "explorer.sortOrder": "filesFirst",
-
-    // EDITOR
-    "editor.copyWithSyntaxHighlighting": false,
-    "editor.cursorSmoothCaretAnimation": true,
-    "editor.detectIndentation": false,
-    "editor.fontFamily": "'Fira Code Retina', 'monospace', monospace, 'Droid Sans Fallback'",
-    "editor.fontLigatures": true,
-    "editor.fontSize": 16,
-    "editor.formatOnSave": true,
-    "editor.minimap.enabled": false,
-    "editor.rulers": [100],
-    "editor.suggestSelection": "first",
-    "editor.wordWrapColumn": 100,
-
-    // FORMATTERS
-    "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
-    "php-cs-fixer.onsave": true,
-    "php-cs-fixer.rules": "@PSR2",
-    "php-cs-fixer.config": ".php_cs;.php_cs.dist",
-    "php-cs-fixer.allowRisky": false,
-    "php-cs-fixer.pathMode": "override",
-    "php-cs-fixer.exclude": [],
-    "php-cs-fixer.autoFixByBracket": true,
-    "php-cs-fixer.autoFixBySemicolon": true,
-    "php-cs-fixer.formatHtml": false,
-    "php-cs-fixer.documentFormattingProvider": true,
-    "blade.format.enable": true,
-
-    "go.useLanguageServer": true,
-
-    "[typescriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    {
+      "before": ["<leader>", "<leader>"],
+      "commands": [":nohl"]
     },
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    {
+      "before": ["j"],
+      "after": ["g", "j"]
     },
-    "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    {
+      "before": ["k"],
+      "after": ["g", "k"]
     },
-    "[yaml]": {
-        "editor.formatOnSave": false
-    },
-    "[markdown]": {
-        "editor.formatOnSave": false
-    },
-    "[jsonc]": {
-        "editor.formatOnSave": false
-    },
-
-    // PYTHON
-    "python.pythonPath": "/usr/bin/python3",
-    "python.testing.pytestEnabled": true,
-
-    // VIM
-    "vim.easymotion": true,
-    "vim.sneak": true,
-    "vim.incsearch": true,
-    "vim.useSystemClipboard": true,
-    "vim.useCtrlKeys": true,
-    "vim.hlsearch": true,
-    "vim.insertModeKeyBindings": [
-        {
-            "before": ["j", "j"],
-            "after": ["<Esc>"]
-        }
-    ],
-    "vim.normalModeKeyBindingsNonRecursive": [
-        {
-            "before": ["<leader>", "d"],
-            "after": ["d", "d"]
-        },
-        {
-            "before": ["<leader>", "<leader>"],
-            "commands": [":nohl"]
-        },
-        {
-            "before": ["j"],
-            "after": ["g", "j"]
-        },
-        {
-            "before": ["k"],
-            "after": ["g", "k"]
-        },
-        {
-            "before": ["Y"],
-            "after": ["y", "$"]
-        }
-    ],
-    "vim.leader": "<space>",
-    "vim.handleKeys": {
-        "<C-a>": false,
-        "<C-f>": false
-    },
+    {
+      "before": ["Y"],
+      "after": ["y", "$"]
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false
+  }
 }
-
