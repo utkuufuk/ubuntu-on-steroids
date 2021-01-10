@@ -202,17 +202,8 @@ source $HOME/.cargo/env
 #### Install NVM
 Note that the version number may differ:
 ``` sh
-# download the installer script
-curl -sL https://raw.githubusercontent.com/creationix/nvm/v0.35.0/install.sh -o install_nvm.sh
-
-# install
-chmod +x install_nvm.sh && ./install_nvm.sh
-
-# delete installer
-rm install_nvm.sh
-
-# update current session
-source ~/.profile
+# you might want to change the version
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
 ```
 
 #### Install Node.js
@@ -360,7 +351,7 @@ composer global require "laravel/installer"
     cd .. && \
     rm -rf sack
    ```
- * [fd](https://github.com/sharkdp/fd) &nbsp;&mdash;&nbsp; `sudo apt install fd`
+ * [fd](https://github.com/sharkdp/fd) &nbsp;&mdash;&nbsp; `sudo apt install fd-find`
  * [bat](https://github.com/sharkdp/bat) &nbsp;&mdash;&nbsp; `sudo apt install bat`
  * [exa](https://github.com/ogham/exa) &nbsp;&mdash;&nbsp; `cargo install exa`
  * [icdiff](https://www.jefftk.com/icdiff) &nbsp;&mdash;&nbsp; `sudo apt install icdiff`
@@ -399,7 +390,8 @@ sudo usermod -aG docker $USER
 docker run hello-world
 
 # 9. install docker-compose 1.24.0 (better check newer versions)
-sudo curl -L "https://github.com/docker/compose/releases/download/1.24.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
 
 # 10. apply executable permission
 sudo chmod +x /usr/local/bin/docker-compose
