@@ -116,6 +116,7 @@ alias vim=nvim
 alias cat=bat
 alias l='exa -lah'
 alias diff=icdiff
+alias fd=fdfind
 
 export PATH="$HOME/.pyenv/bin:$HOME/.cargo/bin:$HOME/.config/composer/vendor/bin:$HOME/.local/bin:$HOME/bin:$HOME/go/bin:$PATH"
 
