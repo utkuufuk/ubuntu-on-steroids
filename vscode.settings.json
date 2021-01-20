@@ -60,6 +60,11 @@
 
   "go.useLanguageServer": true,
 
+  "eslint.format.enable": true,
+  "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+  },
+
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
