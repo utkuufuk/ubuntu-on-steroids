@@ -1,4 +1,4 @@
-// Place your key bindings in this file to override the defaultsauto[]
+// Place your key bindings in this file to override the defaults
 [
     {
         "key": "ctrl+s",
@@ -19,11 +19,27 @@
     {
         "key": "ctrl+shift+y",
         "command": "workbench.action.closePanel",
-        // "when": "terminalFocus"
+        "when": "terminalFocus"
     },
     {
         "key": "ctrl+shift+y",
         "command": "workbench.action.toggleMaximizedPanel",
         "when": "!terminalFocus"
+    },
+    {
+        "key": "alt+u",
+        "command": "type",
+        "args": {
+            "text": "`"
+        },
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+space",
+        "command": "type",
+        "args": {
+            "text": " "
+        },
+        "when": "editorTextFocus"
     }
 ]
