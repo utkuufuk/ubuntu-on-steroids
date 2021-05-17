@@ -1,19 +1,19 @@
 // Place your key bindings in this file to override the defaults
 [
     {
-        "key": "ctrl+s",
+        "key": "cmd+s",
         "command": "workbench.action.files.saveWithoutFormatting"
     },
     {
-        "key": "ctrl+k s",
+        "key": "cmd+k s",
         "command": "-workbench.action.files.saveWithoutFormatting"
     },
     {
-        "key": "ctrl+k s",
+        "key": "cmd+k s",
         "command": "workbench.action.files.save"
     },
     {
-        "key": "ctrl+s",
+        "key": "cmd+s",
         "command": "-workbench.action.files.save"
     },
     {
@@ -41,5 +41,15 @@
             "text": " "
         },
         "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+cmd+right",
+        "command": "workbench.action.terminal.focusNext",
+        "when": "terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "shift+cmd+left",
+        "command": "workbench.action.terminal.focusPrevious",
+        "when": "terminalFocus && terminalProcessSupported"
     }
 ]
