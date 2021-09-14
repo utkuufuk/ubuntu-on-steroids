@@ -86,6 +86,9 @@
   "[php]": {
     "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
   },
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust"
+  },
 
   // VIM
   "vim.easymotion": true,
