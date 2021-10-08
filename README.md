@@ -299,7 +299,6 @@ composer global require "laravel/installer"
       - Editor
          * Vim
          * TabNine
-         * GitLens
          * EditorConfig for VS Code
       - Remote Development
          * Remote - SSH
@@ -309,10 +308,14 @@ composer global require "laravel/installer"
          * REST Client
          * Auto Rename Tag
          * Live Server
+         * GraphQL
+      - Git
+         * GitLens
       - JavaScript & TypeScript
          * Prettier ([prettierrc](./.prettierrc.yml))
          * ESLint (`npm install -g eslint`)
          * ES7 React/Redux/GraphQL/React-Native snippets
+         * vscode-sql-template-literal
       - PHP
          * PHP Debug
          * PHP DocBlocker
@@ -325,6 +328,8 @@ composer global require "laravel/installer"
          * Python
          * AREPL for python
          * autoDocstring
+      - Rust
+         * Rust
       - Other
          * Docker
          * Create Files & Folders: On The Go
