@@ -17,16 +17,6 @@
         "command": "-workbench.action.files.save"
     },
     {
-        "key": "ctrl+shift+y",
-        "command": "workbench.action.closePanel",
-        "when": "terminalFocus"
-    },
-    {
-        "key": "ctrl+shift+y",
-        "command": "workbench.action.toggleMaximizedPanel",
-        "when": "!terminalFocus"
-    },
-    {
         "key": "alt+u",
         "command": "type",
         "args": {
