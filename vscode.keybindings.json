@@ -17,18 +17,20 @@
         "command": "-workbench.action.files.save"
     },
     {
+        "key": "cmd+j",
+        "command": "workbench.action.toggleMaximizedPanel",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "cmd+j",
+        "command": "workbench.action.closePanel",
+        "when": "terminalFocus"
+    },
+    {
         "key": "alt+u",
         "command": "type",
         "args": {
             "text": "`"
-        },
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "alt+space",
-        "command": "type",
-        "args": {
-            "text": " "
         },
         "when": "editorTextFocus"
     },
@@ -41,5 +43,17 @@
         "key": "shift+cmd+left",
         "command": "workbench.action.terminal.focusPrevious",
         "when": "terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "cmd+j",
+        "command": "-workbench.action.togglePanel"
+    },
+    {
+        "key": "alt+space",
+        "command": "type",
+        "args": {
+            "text": " "
+        },
+        "when": "editorTextFocus"
     }
 ]
