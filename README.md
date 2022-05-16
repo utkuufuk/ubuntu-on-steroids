@@ -226,8 +226,6 @@ npm install npm@latest -g
 npm config set init.author.name <name>
 npm config set init.author.email <email>
 ```
-
-See [additional tips](./nodejs.md) for more info.
 <br>
 
 ### Laravel
@@ -312,7 +310,7 @@ composer global require "laravel/installer"
       - Git
          * GitLens
       - JavaScript & TypeScript
-         * Prettier ([prettierrc](./.prettierrc.yml))
+         * Prettier
          * ESLint (`npm install -g eslint`)
          * ES7 React/Redux/GraphQL/React-Native snippets
          * vscode-sql-template-literal
