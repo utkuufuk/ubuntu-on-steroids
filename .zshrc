@@ -1,20 +1,7 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-
-# Path to your oh-my-zsh installation.
 export ZSH="/home/utku/.oh-my-zsh"
 
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="spaceship"
-
-# Set list of themes to pick from when loading at random
-# Setting this variable when ZSH_THEME=random will cause zsh to load
-# a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
-# If set to an empty array, this variable will have no effect.
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -60,8 +47,6 @@ ZSH_THEME="spaceship"
 # Which plugins would you like to load?
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
 plugins=(
     git
     zsh-autosuggestions
@@ -98,27 +83,22 @@ export BAT_THEME="Dracula"
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# additional git aliases
+# git aliases
 alias glh='git pull origin $(git rev-parse --abbrev-ref HEAD)'
 alias gph='git push origin $(git rev-parse --abbrev-ref HEAD)'
-
-# docker aliases
-alias d="docker"
-alias dps="docker ps"
+alias gc='git commit -v --no-verify' 
+alias gs=gss
+alias gd='git diff --minimal'
+alias gdst='gd --staged'
 
 # other aliases
 alias vim=nvim
 alias cat=bat
 alias l='exa -lah'
 alias diff=icdiff
-alias fd=fdfind
 
-export PATH="$HOME/.pyenv/bin:$HOME/.cargo/bin:$HOME/.config/composer/vendor/bin:$HOME/.local/bin:$HOME/bin:$HOME/go/bin:$PATH"
+export PATH="$HOME/.pyenv/bin:$HOME/.cargo/bin:$HOME/.local/bin:$HOME/bin:$HOME/go/bin:$PATH"
 
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
