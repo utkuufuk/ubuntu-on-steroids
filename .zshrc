@@ -28,7 +28,7 @@ alias gdst='gd --staged'
 # other aliases
 alias vim=nvim
 alias cat=bat
-alias l='exa -lah'
+alias l='eza -lah'
 alias diff=icdiff
 
 export PYENV_ROOT="$HOME/.pyenv"
