@@ -1,4 +1,4 @@
-color torte
+color desert
 
 " Enable syntax highlighting
 syntax enable
