@@ -85,14 +85,9 @@ git ls-files | grep '\.py$' | xargs wc -l
 <br>
 
 ### Neovim
- 1. [Install Neovim](https://github.com/neovim/neovim)
-    1. `sudo apt install neovim`
-    2. `curl -o ~/.config/nvim/init.vim --create-dirs https://raw.githubusercontent.com/utkuufuk/ubuntu-on-steroids/master/init.vim`
 
- 2. [Install Vim-Plug](https://github.com/junegunn/vim-plug)
-    > `curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim`
-
- 3. Activate plugins by using the command `:PlugInstall` in `vim ~/.config/nvim/init.vim`
+[Install Neovim](https://github.com/neovim/neovim)
+    > `sudo apt install neovim`
 
 <br>
 
@@ -139,18 +134,12 @@ git ls-files | grep '\.py$' | xargs wc -l
     * `source $ZSH_CUSTOM/autosuggestion-settings.zsh`
  5. [Zsh Syntax Highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
     * `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
- 6. Configure `.zshrc`
-    * `curl -o ~/.zshrc https://raw.githubusercontent.com/utkuufuk/ubuntu-on-steroids/master/.zshrc`
-    * `source ~/.zshrc`
 <br>
 
 ### Python
 #### Install Pyenv
 ```sh
 curl https://pyenv.run | bash
-
-# init pyenv (see .zshrc)
-source ~/.zshrc
 ```
 
 #### Install Build Dependencies
